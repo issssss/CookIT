@@ -1,0 +1,31 @@
+C:\Users\Andrea\Documents\Visual Studio 2008\Projects\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.dll
+C:\Users\Andrea\Documents\Visual Studio 2008\Projects\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Users\Andrea\Documents\Visual Studio 2008\Projects\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrea\Documents\Visual Studio 2008\Projects\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
+C:\Users\Andrea\Documents\Visual Studio 2008\Projects\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Users\Andrea\Desktop\Seminar\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.dll
+C:\Users\Andrea\Desktop\Seminar\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Users\Andrea\Desktop\Seminar\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrea\Desktop\Seminar\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
+C:\Users\Andrea\Desktop\Seminar\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb
+D:\eRecruit\Unit testing\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.dll
+D:\eRecruit\Unit testing\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.pdb
+D:\eRecruit\Unit testing\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
+D:\eRecruit\Unit testing\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb
+D:\eRecruit\Unit testing\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csprojResolveAssemblyReference.cache
+D:\Users\Zvone\_FER\Nastava\OOD\Unit testing\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Unit testing\Seminar\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Unit testing\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csprojResolveAssemblyReference.cache
+D:\Users\Zvone\_FER\Nastava\OOD\Unit testing\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Unit testing\Seminar\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.dll
+C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csproj.AssemblyReference.cache
+C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csproj.CoreCompileInputs.cache
+C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
+C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb

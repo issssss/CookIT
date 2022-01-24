@@ -1,0 +1,103 @@
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.exe
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.Controller.dll
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.DomainModel.dll
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.dll
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.DomainModel.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.Controller.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.Properties.Resources.resources
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.GenerateResource.Cache
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.exe
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.BaseInterfaces.dll
+D:\Users\Zvone\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.BaseInterfaces.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.exe
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.exe
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.BaseInterfaces.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.Controller.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.DomainModel.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.BaseInterfaces.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.Controller.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.DomainModel.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csprojResolveAssemblyReference.cache
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.Properties.Resources.resources
+D:\Users\Zvone\_FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.GenerateResource.Cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.exe
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.BaseInterfaces.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.Controller.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.DomainModel.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.BaseInterfaces.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.Controller.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\bin\Debug\FinAssist.DomainModel.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.Properties.Resources.resources
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.GenerateResource.Cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.exe
+D:\Storage\GoogleDrive\FER\Nastava\OOD\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Archive\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.exe
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Archive\Case study - FinAssist\FinAssistCaseStudy\FinAssist.AppStarter\obj\Debug\FinAssist.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.Properties.Resources.resources
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.GenerateResource.Cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\obj\Debug\FinAssist.exe
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\obj\Debug\FinAssist.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.exe.config
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.exe
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.Controllers.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.BaseLib.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.Controllers.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.BaseLib.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.MemoryBasedDAL.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.AppStarter\bin\Debug\FinAssist.MemoryBasedDAL.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.exe.config
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.exe
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.BaseLib.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Controllers.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.MemoryBasedDAL.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.BaseLib.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Controllers.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.MemoryBasedDAL.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.Properties.Resources.resources
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.GenerateResource.Cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.exe
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.exe.config
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.exe
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.BaseLib.dll
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Controllers.dll
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.MemoryBasedDAL.dll
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Model.dll
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.dll
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.BaseLib.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Controllers.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.MemoryBasedDAL.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.Model.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\bin\Debug\FinAssist.PresentationLayer.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.AssemblyReference.cache
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.Properties.Resources.resources
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.GenerateResource.cache
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.CoreCompileInputs.cache
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.AppStarter.csproj.CopyComplete
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.exe
+C:\Temp\FinAssistCode\Pred 08\FinAssist.AppStarter\obj\Debug\FinAssist.pdb

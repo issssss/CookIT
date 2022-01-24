@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F7C9BAD-EE32-48E4-8FD5-503CB3FF9A17}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CookIT.PresentationLayer</RootNamespace>
+    <AssemblyName>CookIT.PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddIngredient.Designer.cs">
+      <DependentUpon>frmAddIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRecipe.Designer.cs">
+      <DependentUpon>frmAddRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainWindow.Designer.cs">
+      <DependentUpon>frmMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewRecipe.Designer.cs">
+      <DependentUpon>frmViewRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowRecipeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowRecipeView.Designer.cs">
+      <DependentUpon>frmShowRecipeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFormsFactory.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddIngredient.resx">
+      <DependentUpon>frmAddIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddRecipe.resx">
+      <DependentUpon>frmAddRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainWindow.resx">
+      <DependentUpon>frmMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewRecipe.resx">
+      <DependentUpon>frmViewRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowRecipeView.resx">
+      <DependentUpon>frmShowRecipeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CookIT.BaseLib\CookIT.BaseLib.csproj">
+      <Project>{1b25dd35-a85e-46a6-8804-131d26a303e4}</Project>
+      <Name>CookIT.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CookIT.Controllers\CookIT.Controllers.csproj">
+      <Project>{e563c752-1b7a-44e8-817b-4a3527321122}</Project>
+      <Name>CookIT.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CookIT.Model\CookIT.Model.csproj">
+      <Project>{e2cb6e11-5265-441b-9747-9a9d80efa16a}</Project>
+      <Name>CookIT.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CookIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparentRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparentRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CookBookNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CookBookRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cookie_xHz_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

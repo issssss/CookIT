@@ -1,0 +1,49 @@
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2011-12\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2011-12\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2011-12\FinAssistCaseStudy\FinAssist.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2011-12\FinAssistCaseStudy\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2011-12\FinAssistCaseStudy\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2011-12\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Util.dll
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2011-12\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Util.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2012-13\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2012-13\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2012-13\FinAssistCaseStudy\FinAssist.Model\obj\Debug\FinAssist.Model.csprojResolveAssemblyReference.cache
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2012-13\FinAssistCaseStudy\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2012-13\FinAssistCaseStudy\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2012-13\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Util.dll
+D:\Users\Zvone\FER\Nastava\OOD\Ak. godina 2012-13\FinAssistCaseStudy\FinAssist.Model\bin\Debug\FinAssist.Util.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Ak. godina 2014-15\FinAssist\FinAssist.Model\obj\Debug\FinAssist.Model.csprojResolveAssemblyReference.cache
+D:\Users\Zvone\_FER\Nastava\OOD\Ak. godina 2014-15\FinAssist\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Ak. godina 2014-15\FinAssist\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\Ak. godina 2014-15\FinAssist\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Users\Zvone\_FER\Nastava\OOD\Ak. godina 2014-15\FinAssist\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Users\Zvone\_FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Users\Zvone\_FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Users\Zvone\_FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\obj\Debug\FinAssist.Model.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\FinAssist case study\Iteration 1 - domain model\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 06\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 06\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 06\FinAssist.Model\obj\Debug\FinAssist.Model.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 06\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 06\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.Model\obj\Debug\FinAssist.Model.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 07\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.Model\obj\Debug\FinAssist.Model.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\FinAssist.Model\obj\Debug\FinAssist.Model.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.Model\bin\Debug\FinAssist.Model.dll
+C:\Temp\FinAssistCode\Pred 08\FinAssist.Model\bin\Debug\FinAssist.Model.pdb
+C:\Temp\FinAssistCode\Pred 08\FinAssist.Model\obj\Debug\FinAssist.Model.csproj.AssemblyReference.cache
+C:\Temp\FinAssistCode\Pred 08\FinAssist.Model\obj\Debug\FinAssist.Model.csproj.CoreCompileInputs.cache
+C:\Temp\FinAssistCode\Pred 08\FinAssist.Model\obj\Debug\FinAssist.Model.dll
+C:\Temp\FinAssistCode\Pred 08\FinAssist.Model\obj\Debug\FinAssist.Model.pdb

@@ -1,0 +1,15 @@
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\UnitTesting\MsUnitTestBasicTest\bin\Debug\MsUnitTestBasicTest.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\UnitTesting\MsUnitTestBasicTest\bin\Debug\MsUnitTestBasicTest.pdb
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\UnitTesting\MsUnitTestBasicTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\UnitTesting\MsUnitTestBasicTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csprojResolveAssemblyReference.cache
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.dll
+D:\Storage\GoogleDrive\FER\Nastava\OOD\SourceCodeOOD\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.pdb
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\bin\Debug\MsUnitTestBasicTest.dll
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\bin\Debug\MsUnitTestBasicTest.pdb
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csproj.AssemblyReference.cache
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csproj.CoreCompileInputs.cache
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csproj.CopyComplete
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.dll
+C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.pdb

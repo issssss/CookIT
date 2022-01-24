@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Andrea\Documents\Visual Studio 2008\Projects\Seminar\PropertyInjection.DataProcessing.Test\bin\Debug\PropertyInjection.DataProcessing.Test.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-05-01" time="22:07:14">
+  <environment nunit-version="2.5.4.10098" clr-version="2.0.50727.4200" os-version="Microsoft Windows NT 6.0.6002 Service Pack 2" platform="Win32NT" cwd="C:\Program Files\NUnit 2.5.4\bin\net-2.0" machine-name="ANDREA-PC" user="Andrea" user-domain="Andrea-PC" />
+  <culture-info current-culture="hr-HR" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Andrea\Documents\Visual Studio 2008\Projects\Seminar\PropertyInjection.DataProcessing.Test\bin\Debug\PropertyInjection.DataProcessing.Test.dll" executed="True" result="Success" success="True" time="0.042" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="PropertyInjection" executed="True" result="Success" success="True" time="0.038" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="DataProcessing" executed="True" result="Success" success="True" time="0.038" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.033" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="DataProcessorTests" executed="True" result="Success" success="True" time="0.030" asserts="0">
+                    <results>
+                      <test-case name="PropertyInjection.DataProcessing.Test.DataProcessorTests.ProcessData_invalidID_throwsException" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                      <test-case name="PropertyInjection.DataProcessing.Test.DataProcessorTests.ProcessData_validID_callsReportPrinter" executed="True" result="Success" success="True" time="0.009" asserts="6" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
