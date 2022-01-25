@@ -29,3 +29,9 @@ C:\Temp\FinAssistCode\Pred 08\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.D
 C:\Temp\FinAssistCode\Pred 08\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.DataProcessing.csproj.CoreCompileInputs.cache
 C:\Temp\FinAssistCode\Pred 08\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.DataProcessing.dll
 C:\Temp\FinAssistCode\Pred 08\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\Dynamic.DataProcessing\bin\Debug\Dynamic.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\Dynamic.DataProcessing\bin\Debug\Dynamic.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.DataProcessing.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.DataProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\Dynamic.DataProcessing\obj\Debug\Dynamic.DataProcessing.pdb

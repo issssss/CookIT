@@ -12,7 +12,7 @@ namespace CookIT.BaseLib
 	public interface IMainFormController
 	{
 		void AddRecipe();
-		void EditRecipe(int ID, string txt);
+		void EditRecipe(int ID, string txt, string grade);
 		void ViewRecipes();
 		void AddIngredient();
 

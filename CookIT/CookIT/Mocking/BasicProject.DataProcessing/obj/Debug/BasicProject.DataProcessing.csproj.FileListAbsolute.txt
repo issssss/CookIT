@@ -28,3 +28,8 @@ C:\Temp\FinAssistCode\Pred 08\Mocking\BasicProject.DataProcessing\obj\Debug\Basi
 C:\Temp\FinAssistCode\Pred 08\Mocking\BasicProject.DataProcessing\obj\Debug\BasicProject.DataProcessing.csproj.CoreCompileInputs.cache
 C:\Temp\FinAssistCode\Pred 08\Mocking\BasicProject.DataProcessing\obj\Debug\BasicProject.DataProcessing.dll
 C:\Temp\FinAssistCode\Pred 08\Mocking\BasicProject.DataProcessing\obj\Debug\BasicProject.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\BasicProject.DataProcessing\bin\Debug\BasicProject.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\BasicProject.DataProcessing\bin\Debug\BasicProject.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\BasicProject.DataProcessing\obj\Debug\BasicProject.DataProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\BasicProject.DataProcessing\obj\Debug\BasicProject.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\BasicProject.DataProcessing\obj\Debug\BasicProject.DataProcessing.pdb

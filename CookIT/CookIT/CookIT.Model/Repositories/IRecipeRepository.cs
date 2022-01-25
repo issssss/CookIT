@@ -19,7 +19,9 @@ namespace CookIT.Model.Repositories
 
         void deleteRecipe(int recID);
 
-        void editRecipe(int ID, Recipe text);
+        void editRecipe(int ID, string text, string grade);
+
+        float calculateSumOfCalories(int ID);
 
     }
 }

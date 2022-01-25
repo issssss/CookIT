@@ -112,6 +112,7 @@ namespace CookIT.PresentationLayer
                 ingredNames.Add(item.Name);
             }
             _controller.GetIngredientQuant(this,ingredNames);
+            UpdateList();
 
   
         }

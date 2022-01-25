@@ -35,3 +35,12 @@ C:\Temp\FinAssistCode\Pred 08\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTes
 C:\Temp\FinAssistCode\Pred 08\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.csproj.CopyComplete
 C:\Temp\FinAssistCode\Pred 08\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.dll
 C:\Temp\FinAssistCode\Pred 08\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\bin\Debug\NUnitBasicTest.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\bin\Debug\NUnitBasicTest.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\bin\Debug\nunit.framework.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\bin\Debug\nunit.framework.xml
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.csproj.CopyComplete
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\NUnitBasicTest\obj\Debug\NUnitBasicTest.pdb

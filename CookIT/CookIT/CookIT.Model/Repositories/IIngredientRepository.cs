@@ -17,8 +17,5 @@ namespace CookIT.Model.Repositories
         List<Ingredient> GetAllIngredients();
         void addIngredient(Ingredient addRec);
 
-        void deleteIngredient(int recID);
-
-        bool doesIngredientExist(Ingredient eing);
     }
 }

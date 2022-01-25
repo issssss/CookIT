@@ -13,3 +13,11 @@ C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTe
 C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csproj.CopyComplete
 C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.dll
 C:\Temp\FinAssistCode\Pred 08\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\bin\Debug\MsUnitTestBasicTest.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\bin\Debug\MsUnitTestBasicTest.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csproj.CopyComplete
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\UnitTesting\MsUnitTestBasicTest\obj\Debug\MsUnitTestBasicTest.csprojAssemblyReference.cache

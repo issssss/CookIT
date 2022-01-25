@@ -29,3 +29,9 @@ C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csproj.CoreCompileInputs.cache
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing\bin\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing\obj\Debug\ConstructorInjection.DataProcessing.pdb

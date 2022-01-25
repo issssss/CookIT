@@ -35,10 +35,7 @@ namespace CookIT.MemoryBasedDAL
             _listIngredients.Add(addIng);
         }
 
-        public void deleteIngredient(int ingID)
-        {
-            throw new NotImplementedException();
-        }
+   
 
         public List<int> getAllIngredientIDs()
         {
@@ -55,18 +52,31 @@ namespace CookIT.MemoryBasedDAL
             return _listIngredients;
         }
 
-        public Ingredient getIngredientByID(int inRecID)
+        public Ingredient getIngredientByID(int inIngID)
         {
-            var ing = (from l in _listIngredients where l.Id == inRecID select l).First();
-            return ing;
+            try
+            {
+                var ing = (from l in _listIngredients where l.Id == inIngID select l).First();
+                return ing;
+            }
+            catch (Exception e)
+            {
+                throw new IngredientDoesntExist();
+            }
         }
 
         public Ingredient getIngredientByName(string ingName)
         {
-            var ing = (from l in _listIngredients where l.Name == ingName select l).First();
-            if(ing != null)
+            try
+            {
+                var ing = (from l in _listIngredients where l.Name == ingName select l).First();
                 return ing;
-            throw new IngredientDoesntExist();
+            }
+            catch (Exception e)
+            {
+                throw new IngredientDoesntExist();
+            } 
+           
         }
 
         public int getNewId()
@@ -77,9 +87,6 @@ namespace CookIT.MemoryBasedDAL
             return nextID;
         }
 
-        public bool doesIngredientExist(Ingredient eing)
-        {
-            return _listIngredients.Any(ing =>ing.Name == eing.Name);
-        }
+   
     }
 }

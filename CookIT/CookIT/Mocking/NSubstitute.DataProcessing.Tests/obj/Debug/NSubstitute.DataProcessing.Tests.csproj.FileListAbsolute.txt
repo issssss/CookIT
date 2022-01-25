@@ -21,3 +21,15 @@ C:\Temp\FinAssistCode\Pred 08\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug
 C:\Temp\FinAssistCode\Pred 08\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.csproj.CopyComplete
 C:\Temp\FinAssistCode\Pred 08\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.dll
 C:\Temp\FinAssistCode\Pred 08\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\bin\Debug\NSubstitute.DataProcessing.Tests.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\bin\Debug\NSubstitute.DataProcessing.Tests.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\bin\Debug\Dynamic.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\bin\Debug\NSubstitute.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\bin\Debug\Dynamic.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\bin\Debug\NSubstitute.xml
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.csproj.CopyComplete
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NSubstitute.DataProcessing.Tests\obj\Debug\NSubstitute.DataProcessing.Tests.pdb

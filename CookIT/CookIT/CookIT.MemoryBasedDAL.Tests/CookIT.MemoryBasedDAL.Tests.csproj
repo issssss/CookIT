@@ -86,7 +86,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="IngredientRepositoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

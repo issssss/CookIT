@@ -12,7 +12,7 @@ C:\Users\Izabela\Desktop\FinAssistCode\CookIT\CookIT.Model\bin\Debug\CookIT.Mode
 C:\Users\Izabela\Desktop\FinAssistCode\CookIT\CookIT.Model\bin\Debug\CookIT.Model.pdb
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.Model\bin\Debug\CookIT.Model.dll
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.Model\bin\Debug\CookIT.Model.pdb
-C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.Model\obj\Debug\CookIT.Model.csprojAssemblyReference.cache
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.Model\obj\Debug\CookIT.Model.csproj.CoreCompileInputs.cache
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.Model\obj\Debug\CookIT.Model.dll
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.Model\obj\Debug\CookIT.Model.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.Model\obj\Debug\CookIT.Model.csprojAssemblyReference.cache

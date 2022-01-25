@@ -29,13 +29,15 @@ namespace CookIT.Controllers
                     Debug.WriteLine(RecIngredients.Count);
                     int ID = recipeRepository.getNewId();
 
-                    Recipe newRecipe = RecipeFactory.CreateRecipe(ID, Name, RecType, RecIngredients, RecText);
+                    Recipe newRecipe = RecipeFactory.CreateRecipe(ID, Name, RecType, RecIngredients, RecText, "");
                     recipeRepository.addRecipe(newRecipe);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Exception: " + ex.Message);
-                    throw;
+                    MessageBox.Show("Please fill up the recipe.");
+      
+                    //throw;
+                    return; 
                 }
             }
         }
@@ -56,12 +58,10 @@ namespace CookIT.Controllers
             rep.deleteRecipe(ID);
         }
 
-        public void EditRecipe(int ID, string text, IRecipeRepository rep)
+        public void EditRecipe(int ID, string text, string grade, IRecipeRepository rep)
         {
-            Recipe oldRecipa = rep.getRecipeByID(ID);
-            rep.deleteRecipe(ID);
-            Recipe newRecipe = RecipeFactory.CreateRecipe(ID, oldRecipa.Name, oldRecipa.Type, oldRecipa.Ingredients, text);
-            rep.editRecipe(ID, newRecipe);
+            
+            rep.editRecipe(ID, text, grade);
         }
         public void GetIngredientQuant(IAddNewRecipeView view, IAddIngredientQuantityView ingQuanView, List<string> ingredients, IMainFormController cont, IIngredientRepository rep)
         {

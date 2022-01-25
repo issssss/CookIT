@@ -29,3 +29,18 @@ C:\Temp\FinAssistCode\Pred 08\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock
 C:\Temp\FinAssistCode\Pred 08\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.csproj.CopyComplete
 C:\Temp\FinAssistCode\Pred 08\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.dll
 C:\Temp\FinAssistCode\Pred 08\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\NMock.DataProcessing.Tests.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\NMock.DataProcessing.Tests.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\Dynamic.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\NMock3.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\Dynamic.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\NMock3.xml
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.csproj.CopyComplete
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\Mocking\NMock.DataProcessing.Tests\obj\Debug\NMock.DataProcessing.Tests.pdb

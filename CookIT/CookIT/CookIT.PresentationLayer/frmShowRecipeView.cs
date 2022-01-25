@@ -44,6 +44,8 @@ namespace CookIT.PresentationLayer
             }
             this.txtRecipeText.Text = _recipe.Text;
             this.label1.Text = _recipe.Name;
+            if (_recipe.Grade != "") this.txtRecipeGrade.Text = _recipe.Grade;
+            this.label4.Text = recrep.calculateSumOfCalories(ID).ToString();
             this.Show();
         }
 
@@ -56,8 +58,11 @@ namespace CookIT.PresentationLayer
 
         private void edit_recipe_Click(object sender, EventArgs e)
         {
+            string grade = null;
             string newText = this.txtRecipeText.Text;
-            _cont.EditRecipe(_recipe.Id, newText);
+            if (this.txtRecipeGrade.Text != null)
+                grade = this.txtRecipeGrade.Text;
+            _cont.EditRecipe(_recipe.Id, newText, grade);
             //_recipe = changedRec;
             this.Close();
 

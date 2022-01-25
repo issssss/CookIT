@@ -43,6 +43,11 @@ namespace CookIT.PresentationLayer
             this.logoName = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtRecipeGrade = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,12 +93,12 @@ namespace CookIT.PresentationLayer
             this.txtRecipeText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRecipeText.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRecipeText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtRecipeText.Location = new System.Drawing.Point(12, 249);
+            this.txtRecipeText.Location = new System.Drawing.Point(12, 283);
             this.txtRecipeText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRecipeText.Multiline = true;
             this.txtRecipeText.Name = "txtRecipeText";
             this.txtRecipeText.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtRecipeText.Size = new System.Drawing.Size(580, 279);
+            this.txtRecipeText.Size = new System.Drawing.Size(580, 245);
             this.txtRecipeText.TabIndex = 13;
             // 
             // button2
@@ -205,12 +210,77 @@ namespace CookIT.PresentationLayer
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Location = new System.Drawing.Point(418, 244);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 34);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Grade:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Location = new System.Drawing.Point(12, 246);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 34);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Energy:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(84, 244);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 34);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "calorie number";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtRecipeGrade
+            // 
+            this.txtRecipeGrade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
+            this.txtRecipeGrade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRecipeGrade.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold);
+            this.txtRecipeGrade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtRecipeGrade.Location = new System.Drawing.Point(494, 249);
+            this.txtRecipeGrade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRecipeGrade.Name = "txtRecipeGrade";
+            this.txtRecipeGrade.Size = new System.Drawing.Size(98, 27);
+            this.txtRecipeGrade.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Location = new System.Drawing.Point(142, 246);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(127, 34);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "kcal (per 100g)";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmShowRecipeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
             this.ClientSize = new System.Drawing.Size(604, 577);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtRecipeGrade);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtRecipeText);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -253,5 +323,10 @@ namespace CookIT.PresentationLayer
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtRecipeGrade;
+        private System.Windows.Forms.Label label5;
     }
 }

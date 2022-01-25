@@ -7,6 +7,7 @@ using System.Diagnostics;
 
 using CookIT.Model;
 using CookIT.Model.Repositories;
+using CookIT.Model.Factories;
 
 namespace CookIT.MemoryBasedDAL
 {
@@ -67,17 +68,30 @@ namespace CookIT.MemoryBasedDAL
 
         public Recipe getRecipeByID(int inRecID)
         {
-            var rec = (from l in _listRecipes where l.Id == inRecID select l).First();
-
-            return rec;
+            try
+            {
+                var rec = (from l in _listRecipes where l.Id == inRecID select l).First();
+                return rec;
+            }
+            catch (Exception e)
+            {
+                throw new RecipeDoesntExist();
+            }
         }
 
         public Recipe getRecipeByName(string recName)
         {
-            var rec = (from l in _listRecipes where l.Name == recName select l).First();
-            if (rec != null)
+            try
+            {
+                var rec = (from l in _listRecipes where l.Name == recName select l).First();
                 return rec;
-            throw new RecipeDoesntExist();
+            }
+            catch (Exception e)
+            {
+                throw new RecipeDoesntExist();
+            }
+            
+            
         }
 
         public List<int> getAllRecipeId()
@@ -100,10 +114,25 @@ namespace CookIT.MemoryBasedDAL
             return _listRecipes.Any(rec => rec.Name == arec.Name);
         }
 
-        public void editRecipe(int ID, Recipe edRec)
+        public void editRecipe(int ID, string edRec, string grade)
         {
-            
-            this._listRecipes.Add(edRec);
+            Recipe oldRecipa = getRecipeByID(ID);
+            deleteRecipe(ID);
+            Recipe editedRecipe = RecipeFactory.CreateRecipe(ID, oldRecipa.Name, oldRecipa.Type, oldRecipa.Ingredients, edRec, grade);
+            this._listRecipes.Add(editedRecipe);
+        }
+
+        public float calculateSumOfCalories(int ID)
+        {
+            float sum = 0;
+            Recipe recipe = getRecipeByID(ID);
+            IngredientRepository ingrep = IngredientRepository.getInstance();
+            foreach (string ing in recipe.Ingredients.Keys)
+            {
+                Ingredient ingred = ingrep.getIngredientByName(ing);
+                sum += ingred.Kcal;
+            }
+            return sum/recipe.Ingredients.Keys.Count;
         }
     }
 }

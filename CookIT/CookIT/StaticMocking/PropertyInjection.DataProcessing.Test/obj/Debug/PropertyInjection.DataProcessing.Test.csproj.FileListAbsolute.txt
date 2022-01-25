@@ -49,3 +49,13 @@ C:\Temp\FinAssistCode\Pred 08\StaticMocking\PropertyInjection.DataProcessing.Tes
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.csproj.CopyComplete
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.dll
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\bin\Debug\PropertyInjection.DataProcessing.Test.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\bin\Debug\PropertyInjection.DataProcessing.Test.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\bin\Debug\PropertyInjection.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\bin\Debug\PropertyInjection.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.csproj.CopyComplete
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\PropertyInjection.DataProcessing.Test\obj\Debug\PropertyInjection.DataProcessing.Test.pdb

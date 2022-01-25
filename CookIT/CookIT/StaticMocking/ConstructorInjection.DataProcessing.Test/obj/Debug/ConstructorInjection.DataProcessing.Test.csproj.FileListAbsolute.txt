@@ -49,3 +49,13 @@ C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing.
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.csproj.CopyComplete
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.dll
 C:\Temp\FinAssistCode\Pred 08\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\bin\Debug\ConstructorInjection.DataProcessing.Test.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\bin\Debug\ConstructorInjection.DataProcessing.Test.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\bin\Debug\ConstructorInjection.DataProcessing.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\bin\Debug\ConstructorInjection.DataProcessing.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.csproj.CopyComplete
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\StaticMocking\ConstructorInjection.DataProcessing.Test\obj\Debug\ConstructorInjection.DataProcessing.Test.pdb
