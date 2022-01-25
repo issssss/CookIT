@@ -16,7 +16,7 @@ namespace CookIT.Model
 
         }
 
-        public Ingredient(int inID, string inName, int energy, int carbs, int proteins, int fats, int fibs, float salt, float minerals) : base(inID)
+        public Ingredient(int inID, string inName, float energy, float carbs, float proteins, float fats, float fibs, float salt, float minerals) : base(inID)
         {
             Name = inName;
             Kcal = energy;
@@ -29,11 +29,11 @@ namespace CookIT.Model
         }
 
         public string Name { get; set; }
-        public int Kcal { get; set; }
-        public int Proteins { get; set; }
-        public int Fat { get; set; }
-        public int Carbs { get; set; }
-        public int Fibers { get; set; }
+        public float Kcal { get; set; }
+        public float Proteins { get; set; }
+        public float Fat { get; set; }
+        public float Carbs { get; set; }
+        public float Fibers { get; set; }
         public float Sodium { get; set; }
         public float Minerals { get; set; }
 

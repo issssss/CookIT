@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions.cs" />
+    <Compile Include="IAddIngredientQuantityView.cs" />
     <Compile Include="IAddNewIngredientView.cs" />
     <Compile Include="IAddNewRecipeView.cs" />
     <Compile Include="IMainController.cs" />

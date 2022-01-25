@@ -33,10 +33,6 @@ namespace CookIT.PresentationLayer
             this.Show();
         }
 
-        public void ShowListOfRecipes()
-        {
-            throw new NotImplementedException();
-        }
 
         private void addRecipeItem_Click(object sender, EventArgs e)
         {
@@ -46,11 +42,7 @@ namespace CookIT.PresentationLayer
             UpdateList();
             this.Show();
         }
-        void IObserver.Update()
-        {
-            _recipeList = this._repository.GetAllRecipes();
-            UpdateList();
-        }
+
         private void UpdateList()
         {
             for (int i = 0; i < _recipeList.Count(); i++)

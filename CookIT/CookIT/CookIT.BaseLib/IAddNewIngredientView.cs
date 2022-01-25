@@ -11,11 +11,11 @@ namespace CookIT.BaseLib
         bool ShowModalView();
 
         string IngredientName { get; }
-        int IngredientKcal { get; }
-        int IngredientProteins { get; }
-        int IngredientCarbs { get; }
-        int IngredientFat { get; }
-        int IngredientFibers { get; }
+        float IngredientKcal { get; }
+        float IngredientProteins { get; }
+        float IngredientCarbs { get; }
+        float IngredientFat { get; }
+        float IngredientFibers { get; }
         float IngredientSodium { get; }
         float IngredientMinerals { get; }
     }

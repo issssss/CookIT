@@ -19,54 +19,54 @@ namespace CookIT.PresentationLayer
         }
 
         public string IngredientName => txtIngredientName.Text;
-        public int IngredientKcal
+        public float IngredientKcal
         {
             get
             {
-                int kcalvalue = 0;
-                if (Int32.TryParse(textBox1.Text, out kcalvalue))
+                float kcalvalue = 0;
+                if (Single.TryParse(textBox1.Text, out kcalvalue))
                     return kcalvalue;
                 throw new ArgumentException();
             }
         }
 
-        public int IngredientProteins
+        public float IngredientProteins
         {
             get
             {
-                int value = 0;
-                if (Int32.TryParse(textBox1.Text, out value))
+                float value = 0;
+                if (Single.TryParse(textBox1.Text, out value))
                     return value;
                 throw new ArgumentException();
             }
         }
 
-        public int IngredientCarbs
+        public float IngredientCarbs
         {
             get
             {
-                int value = 0;
-                if (Int32.TryParse(textBox1.Text, out value))
+                float value = 0;
+                if (Single.TryParse(textBox1.Text, out value))
                     return value;
                 throw new ArgumentException();
             }
         }
-        public int IngredientFat
+        public float IngredientFat
         {
             get
             {
-                int value = 0;
-                if (Int32.TryParse(textBox1.Text, out value))
+                float value = 0;
+                if (Single.TryParse(textBox1.Text, out value))
                     return value;
                 throw new ArgumentException();
             }
         }
-        public int IngredientFibers
+        public float IngredientFibers
         {
             get
             {
-                int value = 0;
-                if (Int32.TryParse(textBox1.Text, out value))
+                float value = 0;
+                if (Single.TryParse(textBox1.Text, out value))
                     return value;
                 throw new ArgumentException();
             }

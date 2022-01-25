@@ -20,11 +20,11 @@ namespace CookIT.Controllers
             try
             {
                     string Name = inForm.IngredientName;
-                    int Kcal = inForm.IngredientKcal;
-                    int Proteins = inForm.IngredientProteins;
-                    int Fats = inForm.IngredientFat;
-                    int Carbs = inForm.IngredientCarbs;
-                    int Fibers = inForm.IngredientFibers;
+                    float Kcal = inForm.IngredientKcal;
+                    float Proteins = inForm.IngredientProteins;
+                    float Fats = inForm.IngredientFat;
+                    float Carbs = inForm.IngredientCarbs;
+                    float Fibers = inForm.IngredientFibers;
                     float Sodium = inForm.IngredientSodium;
                     float Minerals = inForm.IngredientMinerals;
                     int ID = repository.getNewId();

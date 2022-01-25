@@ -29,6 +29,7 @@ namespace CookIT.PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmViewRecipes));
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -51,7 +52,7 @@ namespace CookIT.PresentationLayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ink Free", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(370, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 34);
@@ -124,7 +125,7 @@ namespace CookIT.PresentationLayer
             // 
             // recipeList
             // 
-            this.recipeList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
+            this.recipeList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
             this.recipeList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
@@ -133,9 +134,10 @@ namespace CookIT.PresentationLayer
             this.recipeList.GridLines = true;
             this.recipeList.HideSelection = false;
             this.recipeList.LabelWrap = false;
-            this.recipeList.Location = new System.Drawing.Point(150, 104);
+            this.recipeList.Location = new System.Drawing.Point(150, 113);
             this.recipeList.Name = "recipeList";
             this.recipeList.Size = new System.Drawing.Size(554, 334);
+            this.recipeList.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.recipeList.TabIndex = 10;
             this.recipeList.UseCompatibleStateImageBehavior = false;
             this.recipeList.View = System.Windows.Forms.View.Details;
@@ -149,7 +151,7 @@ namespace CookIT.PresentationLayer
             // columnHeader2
             // 
             this.columnHeader2.Text = "Flavour";
-            this.columnHeader2.Width = 360;
+            this.columnHeader2.Width = 119;
             // 
             // pictureBox4
             // 
@@ -181,7 +183,7 @@ namespace CookIT.PresentationLayer
             // 
             // searchBox
             // 
-            this.searchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.searchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
             this.searchBox.Location = new System.Drawing.Point(207, 76);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(497, 22);
@@ -218,8 +220,10 @@ namespace CookIT.PresentationLayer
             this.Font = new System.Drawing.Font("Ink Free", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(163)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmViewRecipes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add new Recipe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

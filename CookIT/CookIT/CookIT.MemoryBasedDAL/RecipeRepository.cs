@@ -102,8 +102,7 @@ namespace CookIT.MemoryBasedDAL
 
         public void editRecipe(int ID, Recipe edRec)
         {
-            Recipe toRemove = this.getRecipeByID(ID);
-            this._listRecipes.Remove(toRemove);
+            
             this._listRecipes.Add(edRec);
         }
     }

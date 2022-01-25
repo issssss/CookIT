@@ -12,7 +12,9 @@ namespace CookIT.BaseLib
 
         string RecipeName { get; }
         string RecipeType { get; }
-        List<int> RecipeIngred { get; }
+        Dictionary<string, string> RecipeIngred { get; }
         string RecipeText { get; }
+
+        void SaveQuantity(Dictionary<string, string> values);
     }
 }

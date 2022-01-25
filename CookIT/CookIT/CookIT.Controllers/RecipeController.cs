@@ -18,14 +18,14 @@ namespace CookIT.Controllers
 
         public void AddNewRecipe(IAddNewRecipeView inForm, IRecipeRepository recipeRepository)
         {
-            if(inForm.ShowModalView() == true)
+            if (inForm.ShowModalView() == true)
             {
                 try
                 {
                     string Name = inForm.RecipeName;
                     string RecType = inForm.RecipeType;
                     string RecText = inForm.RecipeText;
-                    List<int> RecIngredients = inForm.RecipeIngred; //new List<int> { 1, 2, 3 };
+                    Dictionary<string, string> RecIngredients = inForm.RecipeIngred; //new List<int> { 1, 2, 3 };
                     Debug.WriteLine(RecIngredients.Count);
                     int ID = recipeRepository.getNewId();
 
@@ -42,11 +42,11 @@ namespace CookIT.Controllers
 
         public void ShowRecipes(IViewRecipesView viewRecipes, IRecipeRepository rep, IMainFormController cont)
         {
-           
+
             viewRecipes.ShowModaless(cont, rep);
         }
 
-        public void ShowRecipe(int ID,IShowRecipe showRec, IRecipeRepository rep, IIngredientRepository ing, IMainFormController cont)
+        public void ShowRecipe(int ID, IShowRecipe showRec, IRecipeRepository rep, IIngredientRepository ing, IMainFormController cont)
         {
             showRec.showRecipe(ID, cont, rep, ing);
         }
@@ -56,9 +56,21 @@ namespace CookIT.Controllers
             rep.deleteRecipe(ID);
         }
 
-        public void EditRecipe(int ID, Recipe recipe, IRecipeRepository rep)
+        public void EditRecipe(int ID, string text, IRecipeRepository rep)
         {
-            rep.editRecipe(ID, recipe);
+            Recipe oldRecipa = rep.getRecipeByID(ID);
+            rep.deleteRecipe(ID);
+            Recipe newRecipe = RecipeFactory.CreateRecipe(ID, oldRecipa.Name, oldRecipa.Type, oldRecipa.Ingredients, text);
+            rep.editRecipe(ID, newRecipe);
+        }
+        public void GetIngredientQuant(IAddNewRecipeView view, IAddIngredientQuantityView ingQuanView, List<string> ingredients, IMainFormController cont, IIngredientRepository rep)
+        {
+            ingQuanView.ShowModaless(view,ingredients, cont, rep);
+        }
+
+        public void GetQuantityforRecipe(IAddNewRecipeView recipeView, Dictionary<string, string> quantity)
+        {
+            recipeView.SaveQuantity(quantity);
         }
     }
 }

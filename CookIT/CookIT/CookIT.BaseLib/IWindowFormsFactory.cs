@@ -14,6 +14,7 @@ namespace CookIT.BaseLib
 		IViewRecipesView CreateViewRecipeView();
 		IAddNewIngredientView CreateAddIngredientView();
 		IShowRecipe CreateShowRecipeView();
+		IAddIngredientQuantityView CreateIngredientsQuantityView();
 
 	}
 }

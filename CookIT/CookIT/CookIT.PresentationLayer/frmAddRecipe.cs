@@ -20,6 +20,7 @@ namespace CookIT.PresentationLayer
         private readonly List<string> _recipeTypes = null;
         private readonly IMainFormController _controller;
         private IIngredientRepository _ingredientRepository = null;
+        private Dictionary<string, string> ingredientQuantity = null;
         public frmAddRecipe(List<string> recipeTypes, IMainFormController incont, IIngredientRepository ingrep)
         {
             _recipeTypes = recipeTypes;
@@ -61,22 +62,8 @@ namespace CookIT.PresentationLayer
             }
         }
 
-        public List<int> RecipeIngred
-        { 
-            
-            get
-            {
-                List<int> ingredInd = new List<int>();
-                if (ingredientList.SelectedItems.Count < 1)
-                    MessageBox.Show("Please choose at least one ingredient.");
-                foreach(ListViewItem item in ingredientList.SelectedItems)
-                {
-                    ingredInd.Add(_ingredientRepository.getIngredientByName(item.Name).Id);
-                }
-                return ingredInd;
-            }
-          //  => throw new NotImplementedException();
-        }
+        public Dictionary<string, string> RecipeIngred => ingredientQuantity;
+
 
         public string RecipeText => txtRecipeText.Text;
 
@@ -102,11 +89,38 @@ namespace CookIT.PresentationLayer
 
                 ListViewItem lvt = new ListViewItem(acc.Name);
                 lvt.Name = acc.Name;
+                if(ingredientQuantity != null)
+                {
+                    lvt.SubItems.Add(ingredientQuantity[lvt.Name]);
+                }
 
                 ingredientList.Items.Add(lvt);
             }
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+            List<string> ingredNames = new List<string>();
+            if (ingredientList.SelectedItems.Count < 1)
+            {
+                MessageBox.Show("Please choose at least one ingredient.");
+                return;
+            }
+            foreach (ListViewItem item in ingredientList.SelectedItems)
+            {
+                ingredNames.Add(item.Name);
+            }
+            _controller.GetIngredientQuant(this,ingredNames);
+
+  
+        }
+
+        public void SaveQuantity(Dictionary<string, string> values)
+        {
+            ingredientQuantity = values;
+            //InitializeComponent();
+            UpdateList();
+        }
     }
 }

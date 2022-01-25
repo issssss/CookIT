@@ -16,3 +16,12 @@ C:\Users\Izabela\Desktop\FinAssistCode\CookIT\CookIT.BaseLib\obj\Debug\CookIT.Ba
 C:\Users\Izabela\Desktop\FinAssistCode\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.csproj.CopyComplete
 C:\Users\Izabela\Desktop\FinAssistCode\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.dll
 C:\Users\Izabela\Desktop\FinAssistCode\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\bin\Debug\CookIT.BaseLib.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\bin\Debug\CookIT.BaseLib.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\bin\Debug\CookIT.Model.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\bin\Debug\CookIT.Model.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.csprojAssemblyReference.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.csproj.CoreCompileInputs.cache
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.csproj.CopyComplete
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.dll
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.BaseLib\obj\Debug\CookIT.BaseLib.pdb

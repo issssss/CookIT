@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CookIT", "CookIT", "{7B8A2F6B-6F58-4D3E-BDAC-37103412B756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookIT.AppStarter", "CookIT\CookIT.AppStarter\CookIT.AppStarter.csproj", "{6C6DDEA8-C6E4-4D4A-B308-6F3DCB109AF5}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookIT.Model", "CookIT\CookIT.Model\CookIT.Model.csproj", "{E2CB6E11-5265-441B-9747-9A9D80EFA16A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookIT.BaseLib", "CookIT\CookIT.BaseLib\CookIT.BaseLib.csproj", "{1B25DD35-A85E-46A6-8804-131D26A303E4}"
@@ -12,8 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookIT.Controllers", "CookIT\CookIT.Controllers\CookIT.Controllers.csproj", "{E563C752-1B7A-44E8-817B-4A3527321122}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookIT.MemoryBasedDAL", "CookIT\CookIT.MemoryBasedDAL\CookIT.MemoryBasedDAL.csproj", "{82230F8E-489E-42D6-9FA6-1BDF21E1E4A0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookIT.AppStarter", "CookIT\CookIT.AppStarter\CookIT.AppStarter.csproj", "{6C6DDEA8-C6E4-4D4A-B308-6F3DCB109AF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookIT.PresentationLayer", "CookIT\CookIT.PresentationLayer\CookIT.PresentationLayer.csproj", "{6F7C9BAD-EE32-48E4-8FD5-503CB3FF9A17}"
 EndProject

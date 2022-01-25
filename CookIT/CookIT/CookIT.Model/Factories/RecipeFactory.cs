@@ -8,7 +8,7 @@ namespace CookIT.Model.Factories
 {
     public class RecipeFactory
     {
-        public static Recipe CreateRecipe(int inID, string inName, string recType, List<int> ingred, string recText)
+        public static Recipe CreateRecipe(int inID, string inName, string recType, Dictionary<string, string> ingred, string recText)
         {
             Recipe recc = null;
             recc = new Recipe(inID, inName, recType, ingred, recText);

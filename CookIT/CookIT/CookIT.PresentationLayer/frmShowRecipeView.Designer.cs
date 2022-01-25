@@ -29,8 +29,10 @@ namespace CookIT.PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmShowRecipeView));
             this.ingredientList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtRecipeText = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,7 +56,8 @@ namespace CookIT.PresentationLayer
             this.ingredientList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
             this.ingredientList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ingredientList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
+            this.columnHeader1,
+            this.columnHeader2});
             this.ingredientList.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold);
             this.ingredientList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ingredientList.GridLines = true;
@@ -64,7 +67,7 @@ namespace CookIT.PresentationLayer
             this.ingredientList.Location = new System.Drawing.Point(310, 12);
             this.ingredientList.MultiSelect = false;
             this.ingredientList.Name = "ingredientList";
-            this.ingredientList.Size = new System.Drawing.Size(208, 232);
+            this.ingredientList.Size = new System.Drawing.Size(282, 232);
             this.ingredientList.TabIndex = 12;
             this.ingredientList.UseCompatibleStateImageBehavior = false;
             this.ingredientList.View = System.Windows.Forms.View.Details;
@@ -72,7 +75,12 @@ namespace CookIT.PresentationLayer
             // columnHeader1
             // 
             this.columnHeader1.Text = "Ingredients";
-            this.columnHeader1.Width = 430;
+            this.columnHeader1.Width = 191;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Quantity";
+            this.columnHeader2.Width = 147;
             // 
             // txtRecipeText
             // 
@@ -84,7 +92,8 @@ namespace CookIT.PresentationLayer
             this.txtRecipeText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRecipeText.Multiline = true;
             this.txtRecipeText.Name = "txtRecipeText";
-            this.txtRecipeText.Size = new System.Drawing.Size(505, 279);
+            this.txtRecipeText.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtRecipeText.Size = new System.Drawing.Size(580, 279);
             this.txtRecipeText.TabIndex = 13;
             // 
             // button2
@@ -94,7 +103,7 @@ namespace CookIT.PresentationLayer
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.Maroon;
-            this.button2.Location = new System.Drawing.Point(402, 532);
+            this.button2.Location = new System.Drawing.Point(477, 531);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 35);
@@ -201,7 +210,7 @@ namespace CookIT.PresentationLayer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
-            this.ClientSize = new System.Drawing.Size(529, 577);
+            this.ClientSize = new System.Drawing.Size(604, 577);
             this.Controls.Add(this.txtRecipeText);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -214,7 +223,9 @@ namespace CookIT.PresentationLayer
             this.Controls.Add(this.logoName);
             this.Controls.Add(this.ingredientList);
             this.ForeColor = System.Drawing.Color.Maroon;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmShowRecipeView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IShowRecipeView";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -233,6 +244,7 @@ namespace CookIT.PresentationLayer
         private System.Windows.Forms.TextBox txtRecipeText;
         private System.Windows.Forms.PictureBox logoName;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;

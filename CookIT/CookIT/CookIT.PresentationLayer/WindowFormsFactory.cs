@@ -24,6 +24,12 @@ namespace CookIT.PresentationLayer
 			return newFrm;
         }
 
+        public IAddIngredientQuantityView CreateIngredientsQuantityView()
+        {
+            var newFrm = new frmIngredientQuantity();
+            return newFrm;
+        }
+
         public IShowRecipe CreateShowRecipeView()
         {
             var newFrm = new frmShowRecipeView();

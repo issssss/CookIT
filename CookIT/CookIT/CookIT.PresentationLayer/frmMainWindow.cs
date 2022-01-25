@@ -15,14 +15,10 @@ namespace CookIT.PresentationLayer
 			_controller = inController;
 
 			InitializeComponent();
+			
 		}
 
 		
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 
 		private void addRecipeItem_Click(object sender, EventArgs e)
 		{

@@ -25,19 +25,20 @@ namespace CookIT.PresentationLayer
 
         public void showRecipe(int ID, IMainFormController cont, IRecipeRepository recrep, IIngredientRepository ingrep)
         {
-            List<int> ingredInd = new List<int>();
+            Dictionary<string, string> ingredInd = new Dictionary<string, string>();
             _recipe = recrep.getRecipeByID(ID);
             _cont = cont;
             _recrep = recrep;
             ingredInd = _recipe.Ingredients;
             List<Ingredient> ingreNames = new List<Ingredient>();
 
-            foreach(int ind in ingredInd)
+            foreach(string ind in ingredInd.Keys)
             {
-                Ingredient ingre = ingrep.getIngredientByID(ind);
+                Ingredient ingre = ingrep.getIngredientByName(ind);
                 ingreNames.Add(ingre);
                 ListViewItem lv = new ListViewItem(ingre.Name);
                 lv.Name = ingre.Name;
+                lv.SubItems.Add(ingredInd[ind]);
                 ingredientList.Items.Add(lv);
                 
             }
@@ -56,9 +57,8 @@ namespace CookIT.PresentationLayer
         private void edit_recipe_Click(object sender, EventArgs e)
         {
             string newText = this.txtRecipeText.Text;
-            Recipe changedRec = new Recipe(_recipe.Id, _recipe.Name, _recipe.Type, _recipe.Ingredients, newText);
-            _cont.EditRecipe(_recipe.Id,changedRec);
-            _recipe = changedRec;
+            _cont.EditRecipe(_recipe.Id, newText);
+            //_recipe = changedRec;
             this.Close();
 
         }

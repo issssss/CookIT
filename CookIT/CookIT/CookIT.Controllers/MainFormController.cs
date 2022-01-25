@@ -3,6 +3,7 @@ using CookIT.BaseLib;
 using CookIT.Model;
 using CookIT.Model.Repositories;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace CookIT.Controllers
 {
@@ -28,11 +29,11 @@ namespace CookIT.Controllers
 			if (_defaultModelLoaded == false)
 			{
 				_ingredientRepository.addIngredient(new Ingredient(1, "Voda", 0, 0, 0, 0, 0, 0, 0));
-				_ingredientRepository.addIngredient(new Ingredient(2, "Glatko brašno", 350, 12, 73, 2, 7,(float) 0.12, (float)0.1));
+				_ingredientRepository.addIngredient(new Ingredient(2, "Glatko brašno", 350, 12, 73, 2, 7, (float)0.12, (float)0.1));
 				_ingredientRepository.addIngredient(new Ingredient(3, "Med", 304, 1, 82, 0, 1, 0, 5));
 				_ingredientRepository.addIngredient(new Ingredient(4, "Jaja", 49, 1, 11, 1, 1, 1, 2));
 				_ingredientRepository.addIngredient(new Ingredient(5, "Cimet", 247, 81, 4, 1, 4, 1, 0));
-				List<int> indIngred = new List<int>() { 1, 2, 3, 4,5 };
+				Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
 				_recipeRepository.addRecipe(new Recipe(1, "Medenjaci", "Slatko", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!"));
 				_recipeRepository.addRecipe(new Recipe(2, "Pizza Genovese", "Slano", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!"));
 				_recipeRepository.addRecipe(new Recipe(3, "Wok s piletinom", "Ljuto", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!"));
@@ -62,10 +63,10 @@ namespace CookIT.Controllers
 			recipeController.AddNewRecipe(newFrm, _recipeRepository);
         }
 
-        public void EditRecipe(int ID, Recipe changedRecipe)
+        public void EditRecipe(int ID, string text)
         {
 			var repController = new RecipeController();
-			repController.EditRecipe(ID, changedRecipe, _recipeRepository);
+			repController.EditRecipe(ID, text, _recipeRepository);
         }
 
         public void ViewRecipes()
@@ -93,6 +94,21 @@ namespace CookIT.Controllers
         {
 			var recController = new RecipeController();
 			recController.DeleteRecipe(ID, _recipeRepository);
+        }
+
+        public void GetIngredientQuant(IAddNewRecipeView view,List<string> ingredients)
+        {
+			var recController = new RecipeController();
+			var newFrm = _formsFactory.CreateIngredientsQuantityView();
+			recController.GetIngredientQuant(view,newFrm, ingredients, this, _ingredientRepository);
+        }
+
+        public void GetQuanityForRecipe(IAddNewRecipeView view, Dictionary<string, string> values)
+        {
+			var recController = new RecipeController();
+			
+			//var newFrm = _formsFactory.CreateAddNewRecipeView(RecipeTypesList.getRecipeTypesList(), this, _ingredientRepository);
+			recController.GetQuantityforRecipe(view, values);
         }
     }
 }

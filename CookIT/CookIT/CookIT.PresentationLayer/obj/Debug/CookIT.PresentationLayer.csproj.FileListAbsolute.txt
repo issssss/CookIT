@@ -61,3 +61,4 @@ C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.csproj.CopyComplete
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.dll
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.pdb
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.frmIngredientQuantity.resources

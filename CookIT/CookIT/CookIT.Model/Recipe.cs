@@ -16,7 +16,7 @@ namespace CookIT.Model
 		{
 		}
 
-		public Recipe(int inID, string inName, string recType, List<int> ingred, string recText) : base(inID)
+		public Recipe(int inID, string inName, string recType, Dictionary<string, string> ingred, string recText) : base(inID)
 		{
 			Name = inName;
 			Type = recType;
@@ -27,7 +27,7 @@ namespace CookIT.Model
 
 		public string Name { get; set; }
 		public string Type { get; set; }
-		public List<int> Ingredients { get; set; }
+		public Dictionary<string, string> Ingredients { get; set; }
 		public string Text { get; set; }
 	}
 }

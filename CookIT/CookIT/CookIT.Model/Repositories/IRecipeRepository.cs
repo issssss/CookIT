@@ -19,6 +19,7 @@ namespace CookIT.Model.Repositories
 
         void deleteRecipe(int recID);
 
-        void editRecipe(int ID, Recipe edRec);
+        void editRecipe(int ID, Recipe text);
+
     }
 }
