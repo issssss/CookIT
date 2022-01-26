@@ -41,5 +41,17 @@ namespace CookIT.PresentationLayer
             var newFrm = new frmViewRecipes();
             return newFrm;
         }
+
+        public IViewMenusView CreateViewMenusView()
+        {
+            var newFrom = new frmViewMenus();
+            return newFrom;
+        }
+
+        public IAddNewMenuView CreateNewMenuView(IMainFormController cont, IRecipeRepository rep)
+        {
+            var newForm = new frmAddMenu(cont, rep);
+            return newForm;
+        }
     }
 }

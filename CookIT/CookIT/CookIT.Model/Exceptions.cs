@@ -23,4 +23,12 @@ namespace CookIT.Model
 	public class IngredientDoesntExist : CookITBaseException
 	{
 	}
+	[Serializable]
+	public class MenuAlreadyExists : CookITBaseException
+	{
+	}
+	[Serializable]
+	public class MenuDoesntExist : CookITBaseException
+	{
+	}
 }

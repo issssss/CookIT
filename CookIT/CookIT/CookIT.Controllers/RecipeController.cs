@@ -34,7 +34,7 @@ namespace CookIT.Controllers
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Please fill up the recipe.");
+                   // MessageBox.Show("Please fill up the recipe.");
       
                     //throw;
                     return; 

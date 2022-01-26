@@ -48,10 +48,13 @@
     <Compile Include="Exceptions.cs" />
     <Compile Include="IAddIngredientQuantityView.cs" />
     <Compile Include="IAddNewIngredientView.cs" />
+    <Compile Include="IAddNewMenuView.cs" />
     <Compile Include="IAddNewRecipeView.cs" />
     <Compile Include="IMainController.cs" />
     <Compile Include="IShowIngredientsView.cs" />
+    <Compile Include="IShowMenuView.cs" />
     <Compile Include="IShowRecipe.cs" />
+    <Compile Include="IViewMenusView.cs" />
     <Compile Include="IViewRecipeView.cs" />
     <Compile Include="IWindowFormsFactory.cs" />
     <Compile Include="Subject.cs" />

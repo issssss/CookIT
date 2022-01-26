@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="IngredientController.cs" />
     <Compile Include="MainFormController.cs" />
+    <Compile Include="MenuController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeController.cs" />
   </ItemGroup>

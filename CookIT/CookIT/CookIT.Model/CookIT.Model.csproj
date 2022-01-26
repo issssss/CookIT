@@ -45,12 +45,15 @@
   <ItemGroup>
     <Compile Include="EntityBase.cs" />
     <Compile Include="Factories\IngredientFactory.cs" />
+    <Compile Include="Factories\MenuFactory.cs" />
     <Compile Include="Factories\RecipeFactory.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Ingredient.cs" />
+    <Compile Include="Meni.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeTypesList.cs" />
     <Compile Include="Repositories\IIngredientRepository.cs" />
+    <Compile Include="Repositories\IMenuRepository.cs" />
     <Compile Include="Repositories\IRecipeRepository.cs" />
     <Compile Include="Recipe.cs" />
   </ItemGroup>

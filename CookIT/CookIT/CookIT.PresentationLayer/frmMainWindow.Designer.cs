@@ -45,6 +45,7 @@
             // 
             // menusButton
             // 
+            this.menusButton.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.menusButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.menusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menusButton.Font = new System.Drawing.Font("Ink Free", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -56,7 +57,7 @@
             this.menusButton.TabIndex = 3;
             this.menusButton.Text = "Menus";
             this.menusButton.UseVisualStyleBackColor = false;
-            this.menusButton.UseWaitCursor = true;
+            this.menusButton.Click += new System.EventHandler(this.menusButton_Click);
             // 
             // recipesButton
             // 

@@ -14,13 +14,15 @@ namespace CookIT.Controllers
 		private readonly IWindowFormsFactory	_formsFactory = null;
 		private readonly IRecipeRepository _recipeRepository = null;																	
 		private readonly IIngredientRepository _ingredientRepository = null;																	
+		private readonly IMenuRepository _menuRepository = null;																	
 
 
-		public MainFormController(IWindowFormsFactory inFormFactory, IRecipeRepository inRecipeRepo, IIngredientRepository inIngRepo)
+		public MainFormController(IWindowFormsFactory inFormFactory, IRecipeRepository inRecipeRepo, IIngredientRepository inIngRepo, IMenuRepository menuRep)
 		{
 			_formsFactory = inFormFactory;
 			_recipeRepository = inRecipeRepo;
 			_ingredientRepository = inIngRepo;
+			_menuRepository = menuRep;
 			LoadDefaultModel();
 			
 		}
@@ -45,7 +47,7 @@ namespace CookIT.Controllers
 				_recipeRepository.addRecipe(new Recipe(9, "Spagetti Bolognese", "Slano", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
 				_recipeRepository.addRecipe(new Recipe(10, "Jaje na oko", "Gorko", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
 				_recipeRepository.addRecipe(new Recipe(11, "Raspucanci", "Slatko", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
-
+				_menuRepository.addMenu(new Meni(1, "Fina kombinacija", "Medenjaci", "Pizza Genovese", "Raspucanci"));
 				_defaultModelLoaded = true;
 			}
 		}
@@ -110,5 +112,30 @@ namespace CookIT.Controllers
 			//var newFrm = _formsFactory.CreateAddNewRecipeView(RecipeTypesList.getRecipeTypesList(), this, _ingredientRepository);
 			recController.GetQuantityforRecipe(view, values);
         }
-    }
+
+        public void AddMenu()
+        {
+			
+			var menuController = new MenuController();
+			var newFrm = _formsFactory.CreateNewMenuView(this, _recipeRepository);
+			menuController.AddNewMenu(newFrm, _menuRepository);
+			
+			
+		}
+
+      
+        public void DeleteMenu(int ID)
+        {
+			var menuCont = new MenuController();
+			menuCont.DeleteMenu(ID, _menuRepository);
+        }
+
+        
+		public void ViewMenus()
+		{
+			var menController = new MenuController();
+			var newFrm = _formsFactory.CreateViewMenusView();
+			menController.ShowMenus(newFrm,_menuRepository, this);
+		}
+	}
 }

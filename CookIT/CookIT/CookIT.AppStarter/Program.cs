@@ -24,7 +24,7 @@ namespace CookIT.AppStarter
 			//TransactionRepository _transRepo = new TransactionRepository();
 
 			// a za Account repozitorij koristimo Singleton
-			MainFormController mainController = new MainFormController(_formsFactory, RecipeRepository.getInstance(), IngredientRepository.getInstance());
+			MainFormController mainController = new MainFormController(_formsFactory, RecipeRepository.getInstance(), IngredientRepository.getInstance(), MenuRepository.getInstance());
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -52,9 +52,11 @@ namespace CookIT.PresentationLayer
         {
             get
             {
+
                 if (cmbRecipeType.SelectedItem == null)
                 {
                     MessageBox.Show("Please choose a type of the recipe.");
+                    return null;
                 }
 
                 return cmbRecipeType.SelectedItem.ToString();
@@ -70,7 +72,15 @@ namespace CookIT.PresentationLayer
         public bool ShowModalView()
         {
             if (this.ShowDialog() == DialogResult.OK)
+            {
+                if (RecipeName == null || RecipeType == null || RecipeIngred == null)
+                {
+                    MessageBox.Show("Please fill in the recipe form, including the ingredients quantity.");
+                   
+                    return false;
+                }
                 return true;
+            }
             else
                 return false;
         }

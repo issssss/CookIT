@@ -68,6 +68,12 @@
     <Compile Include="frmAddIngredient.Designer.cs">
       <DependentUpon>frmAddIngredient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddMenu.Designer.cs">
+      <DependentUpon>frmAddMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddRecipe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +92,17 @@
     <Compile Include="frmMainWindow.Designer.cs">
       <DependentUpon>frmMainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViewRecipe.cs">
+    <Compile Include="frmViewMenus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmViewRecipe.Designer.cs">
-      <DependentUpon>frmViewRecipe.cs</DependentUpon>
+    <Compile Include="frmViewMenus.Designer.cs">
+      <DependentUpon>frmViewMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewRecipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewRecipes.Designer.cs">
+      <DependentUpon>frmViewRecipes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmShowRecipeView.cs">
       <SubType>Form</SubType>
@@ -111,6 +123,9 @@
     <EmbeddedResource Include="frmAddIngredient.resx">
       <DependentUpon>frmAddIngredient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddMenu.resx">
+      <DependentUpon>frmAddMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddRecipe.resx">
       <DependentUpon>frmAddRecipe.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,8 +135,11 @@
     <EmbeddedResource Include="frmMainWindow.resx">
       <DependentUpon>frmMainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewRecipe.resx">
-      <DependentUpon>frmViewRecipe.cs</DependentUpon>
+    <EmbeddedResource Include="frmViewMenus.resx">
+      <DependentUpon>frmViewMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewRecipes.resx">
+      <DependentUpon>frmViewRecipes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowRecipeView.resx">
       <DependentUpon>frmShowRecipeView.cs</DependentUpon>

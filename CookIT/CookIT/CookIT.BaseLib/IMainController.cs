@@ -24,6 +24,11 @@ namespace CookIT.BaseLib
 
 		void GetQuanityForRecipe(IAddNewRecipeView view,Dictionary<string, string> values);
 
+		void AddMenu();
+		
+		void DeleteMenu(int ID);
+
+
 
 	}
 }
