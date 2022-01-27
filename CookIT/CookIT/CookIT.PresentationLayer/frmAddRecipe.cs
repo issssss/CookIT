@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CookIT.Model;
-using CookIT.Model.Repositories;
+
 
 
 namespace CookIT.PresentationLayer
@@ -19,13 +19,11 @@ namespace CookIT.PresentationLayer
     {
         private readonly List<string> _recipeTypes = null;
         private readonly IMainFormController _controller;
-        private IIngredientRepository _ingredientRepository = null;
         private Dictionary<string, string> ingredientQuantity = null;
-        public frmAddRecipe(List<string> recipeTypes, IMainFormController incont, IIngredientRepository ingrep)
+        public frmAddRecipe(List<string> recipeTypes, IMainFormController incont)
         {
             _recipeTypes = recipeTypes;
             _controller = incont;
-            _ingredientRepository = ingrep;
 
 
             InitializeComponent();
@@ -87,7 +85,7 @@ namespace CookIT.PresentationLayer
 
         private void UpdateList()
         {
-            List<Ingredient> _ingredientList = _ingredientRepository.GetAllIngredients();
+            List<Ingredient> _ingredientList = _controller.GetAllIngredients();
 
             for (int i = 0; i < _ingredientList.Count(); i++)
             {
@@ -112,12 +110,12 @@ namespace CookIT.PresentationLayer
         {
             
             List<string> ingredNames = new List<string>();
-            if (ingredientList.SelectedItems.Count < 1)
+            if (ingredientList.CheckedItems.Count < 1)
             {
                 MessageBox.Show("Please choose at least one ingredient.");
                 return;
             }
-            foreach (ListViewItem item in ingredientList.SelectedItems)
+            foreach (ListViewItem item in ingredientList.CheckedItems)
             {
                 ingredNames.Add(item.Name);
             }
@@ -132,6 +130,14 @@ namespace CookIT.PresentationLayer
             ingredientQuantity = values;
             //InitializeComponent();
             UpdateList();
+        }
+
+        private void ingredientList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+                _controller.ShowIngredient(ingredientList.SelectedItems[0].Text);
+
+           
         }
     }
 }

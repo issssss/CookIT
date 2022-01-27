@@ -8,6 +8,7 @@ using CookIT.Model.Factories;
 using CookIT.Model.Repositories;
 using CookIT.BaseLib;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 
 namespace CookIT.Controllers
@@ -32,13 +33,13 @@ namespace CookIT.Controllers
                 }
                 catch(Exception e)
                 {
-                    //Messa
+                    MessageBox.Show("The name of the menu is already taken.");
                 }
             }
         }
         public void ShowMenus(IViewMenusView viewMenus, IMenuRepository rep, IMainFormController cont)
         {
-            viewMenus.ShowMenus(cont, rep);
+            viewMenus.ShowMenus(cont, rep.GetAllMenus());
         }
         public void DeleteMenu(int ID, IMenuRepository rep)
         { 

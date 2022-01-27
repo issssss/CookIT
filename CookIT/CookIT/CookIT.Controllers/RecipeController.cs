@@ -34,7 +34,7 @@ namespace CookIT.Controllers
                 }
                 catch (Exception ex)
                 {
-                   // MessageBox.Show("Please fill up the recipe.");
+                    MessageBox.Show("Please recipe incorrectly filled, please try again.");
       
                     //throw;
                     return; 
@@ -45,12 +45,12 @@ namespace CookIT.Controllers
         public void ShowRecipes(IViewRecipesView viewRecipes, IRecipeRepository rep, IMainFormController cont)
         {
 
-            viewRecipes.ShowModaless(cont, rep);
+            viewRecipes.ShowModaless(cont, rep.GetAllRecipes());
         }
 
-        public void ShowRecipe(int ID, IShowRecipe showRec, IRecipeRepository rep, IIngredientRepository ing, IMainFormController cont)
+        public void ShowRecipe(int ID, IShowRecipe showRec, IRecipeRepository rep, IMainFormController cont)
         {
-            showRec.showRecipe(ID, cont, rep, ing);
+            showRec.showRecipe(ID, cont, rep.getRecipeByID(ID));
         }
 
         public void DeleteRecipe(int ID, IRecipeRepository rep)
@@ -63,14 +63,58 @@ namespace CookIT.Controllers
             
             rep.editRecipe(ID, text, grade);
         }
-        public void GetIngredientQuant(IAddNewRecipeView view, IAddIngredientQuantityView ingQuanView, List<string> ingredients, IMainFormController cont, IIngredientRepository rep)
+        public void GetIngredientQuant(IAddNewRecipeView view, IAddIngredientQuantityView ingQuanView, List<string> ingredients, IMainFormController cont)
         {
-            ingQuanView.ShowModaless(view,ingredients, cont, rep);
+            ingQuanView.ShowModaless(view,ingredients, cont);
         }
 
         public void GetQuantityforRecipe(IAddNewRecipeView recipeView, Dictionary<string, string> quantity)
         {
             recipeView.SaveQuantity(quantity);
+        }
+
+        public void GetRecipeRecommentadion(IChooseForRecommendationView inForm, IRecipeRepository recipeRepository, IShowRecipe recipe, IMainFormController cont)
+        {
+            if(inForm.ShowModalView() == true)
+            {
+                try
+                {
+                    int ID = recipeRepository.getRecommendation(inForm.Type, inForm.Ingredient);
+                    if (ID == -1)
+                        MessageBox.Show("There is no recipe with those requirements. Try again.");
+                    else
+                    {
+                        recipe.showRecipe(ID, cont, recipeRepository.getRecipeByID(ID));
+                    }
+                }
+                catch(Exception e)
+                {
+                    MessageBox.Show("The values are incorrect, sorry.");
+                }
+            }
+        }
+
+        public void ShowToMakeList(IShowToMakeView inForm, IRecipeRepository rep, IMainFormController controller)
+        {
+            inForm.ShowModaless(controller, rep.getAllToMakeRecipes());
+
+        }
+
+        public void AddRecipeToMakeList(int ID,IRecipeRepository rep)
+        {
+            try
+            {
+                rep.addToMakeRecipe(ID);
+            }catch(Exception e)
+            {
+                MessageBox.Show("The recipe is already in the list.");
+            }
+        }
+
+        public void RemoveFromToMakeList(int ID, IRecipeRepository rep)
+        {
+            
+            rep.removeToMakeRecipe(ID);
         }
     }
 }

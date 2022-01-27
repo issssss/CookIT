@@ -28,6 +28,19 @@ namespace CookIT.BaseLib
 		
 		void DeleteMenu(int ID);
 
+		void ShowIngredient(string name);
+
+		float calculateSumOfCalories(int ID);
+
+		List<Meni> GetAllMenus();
+		List<Recipe> GetAllRecipes();
+		List<Ingredient> GetAllIngredients();
+		List<Recipe> GetToMakeList();
+
+		void AddToMakeList(int ID);
+		void RemoveFromToMakeList(int ID);
+
+
 
 
 	}

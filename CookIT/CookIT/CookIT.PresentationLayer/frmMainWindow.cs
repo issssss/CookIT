@@ -18,9 +18,6 @@ namespace CookIT.PresentationLayer
 			
 		}
 
-
-		
-
 		private void addRecipeItem_Click(object sender, EventArgs e)
 		{
 			_controller.ViewRecipes();
@@ -28,12 +25,17 @@ namespace CookIT.PresentationLayer
 
         private void getRecButton_Click(object sender, EventArgs e)
         {
-
+			_controller.RecommendationWindow();
         }
 
         private void menusButton_Click(object sender, EventArgs e)
         {
 			_controller.ViewMenus();
+        }
+
+        private void addToMakeButton_Click(object sender, EventArgs e)
+        {
+			_controller.ShowToMakeRecipe();
         }
     }
 }

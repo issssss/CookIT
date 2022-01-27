@@ -50,10 +50,12 @@
     <Compile Include="IAddNewIngredientView.cs" />
     <Compile Include="IAddNewMenuView.cs" />
     <Compile Include="IAddNewRecipeView.cs" />
+    <Compile Include="IChooseForRecommendationView.cs" />
     <Compile Include="IMainController.cs" />
-    <Compile Include="IShowIngredientsView.cs" />
+    <Compile Include="IShowIngredientView.cs" />
     <Compile Include="IShowMenuView.cs" />
     <Compile Include="IShowRecipe.cs" />
+    <Compile Include="IShowToMakeView.cs" />
     <Compile Include="IViewMenusView.cs" />
     <Compile Include="IViewRecipeView.cs" />
     <Compile Include="IWindowFormsFactory.cs" />

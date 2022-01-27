@@ -22,6 +22,10 @@ namespace CookIT.Model.Repositories
         void editRecipe(int ID, string text, string grade);
 
         float calculateSumOfCalories(int ID);
+        int getRecommendation(string typeOfRecipe, string ingredient);
+        void addToMakeRecipe(int ID);
+        void removeToMakeRecipe(int recID);
+        List<Recipe> getAllToMakeRecipes();
 
     }
 }

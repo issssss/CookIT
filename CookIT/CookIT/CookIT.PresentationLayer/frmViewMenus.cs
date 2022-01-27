@@ -9,24 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CookIT.Model;
-using CookIT.Model.Repositories;
 
 namespace CookIT.PresentationLayer
 {
     public partial class frmViewMenus : Form, IViewMenusView
     {
         private IMainFormController _controller = null;
-        private IMenuRepository _repository = null;
         private List<Meni> _menuList = null;
         public frmViewMenus()
         {
             InitializeComponent();
         }
-        public void ShowMenus(IMainFormController inMainController, IMenuRepository inListRec)
+        public void ShowMenus(IMainFormController inMainController, List<Meni> menus)
         {
             _controller = inMainController;
-            _repository = inListRec;
-            _menuList = inListRec.GetAllMenus();
+            _menuList = menus;
 
             UpdateList();
 
@@ -38,7 +35,7 @@ namespace CookIT.PresentationLayer
         {
             this.Hide();
             _controller.AddMenu();
-            _menuList = this._repository.GetAllMenus();
+            _menuList = _controller.GetAllMenus();
             UpdateList();
             this.Show();
         }
@@ -73,10 +70,10 @@ namespace CookIT.PresentationLayer
         {
             if(menuList.SelectedItems.Count > 0)
             {
-                string name = menuList.SelectedItems[0].Text;
-                int ind = _repository.getMenuByName(name).Id;
+                int ind = menuList.SelectedIndices[0];
+                int id = _menuList[ind].Id;
 
-                _controller.DeleteMenu(ind);
+                _controller.DeleteMenu(id);
                 menuList.Items.Clear();
                 UpdateList();
             }

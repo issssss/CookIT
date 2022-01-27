@@ -36,17 +36,17 @@ namespace CookIT.Controllers
 				_ingredientRepository.addIngredient(new Ingredient(4, "Jaja", 49, 1, 11, 1, 1, 1, 2));
 				_ingredientRepository.addIngredient(new Ingredient(5, "Cimet", 247, 81, 4, 1, 4, 1, 0));
 				Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-				_recipeRepository.addRecipe(new Recipe(1, "Medenjaci", "Slatko", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
-				_recipeRepository.addRecipe(new Recipe(2, "Pizza Genovese", "Slano", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
-				_recipeRepository.addRecipe(new Recipe(3, "Wok s piletinom", "Ljuto", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
-				_recipeRepository.addRecipe(new Recipe(4, "Pire krumpir", "Slano", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
-				_recipeRepository.addRecipe(new Recipe(5, "Frigane lignje", "Slano", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
-				_recipeRepository.addRecipe(new Recipe(6, "Pohana piletina", "Slano", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
-				_recipeRepository.addRecipe(new Recipe(7, "Gravce na tavce", "Ljuto", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
-				_recipeRepository.addRecipe(new Recipe(8, "Kiseli kupus", "Kiselo", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
-				_recipeRepository.addRecipe(new Recipe(9, "Spagetti Bolognese", "Slano", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
-				_recipeRepository.addRecipe(new Recipe(10, "Jaje na oko", "Gorko", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
-				_recipeRepository.addRecipe(new Recipe(11, "Raspucanci", "Slatko", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
+				_recipeRepository.addRecipe(new Recipe(1, "Medenjaci", "Sweet", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
+				_recipeRepository.addRecipe(new Recipe(2, "Pizza Genovese", "Savory", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
+				_recipeRepository.addRecipe(new Recipe(3, "Wok s piletinom", "Hot", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
+				_recipeRepository.addRecipe(new Recipe(4, "Pire krumpir", "Savory", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
+				_recipeRepository.addRecipe(new Recipe(5, "Frigane lignje", "Savory", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!",""));
+				_recipeRepository.addRecipe(new Recipe(6, "Pohana piletina", "Savory", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
+				_recipeRepository.addRecipe(new Recipe(7, "Gravce na tavce", "Hot", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
+				_recipeRepository.addRecipe(new Recipe(8, "Kiseli kupus", "Sour", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
+				_recipeRepository.addRecipe(new Recipe(9, "Spagetti Bolognese", "Savory", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
+				_recipeRepository.addRecipe(new Recipe(10, "Jaje na oko", "Bitter", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
+				_recipeRepository.addRecipe(new Recipe(11, "Raspucanci", "Sweet", indIngred, "Smijesati prvo med i maslac dok se ne dobije ujednacena smjesa.\n Zatim dodati jaja i promijesati. Sa strane spojiti suhe sastojke.\n Polagano umjesiti suhe sastojke s mokrima.\n Ostaviti smjesu da odstoji sat vremena te zatim oblikovati kuglice.\n Peci na 200 stupnjeva, 15 do 20 minuta.\n Bon Apetit!", ""));
 				_menuRepository.addMenu(new Meni(1, "Fina kombinacija", "Medenjaci", "Pizza Genovese", "Raspucanci"));
 				_defaultModelLoaded = true;
 			}
@@ -60,7 +60,7 @@ namespace CookIT.Controllers
 
 			var recipeController = new RecipeController();
 
-			var newFrm = _formsFactory.CreateAddNewRecipeView(RecipeTypesList.getRecipeTypesList(), this, _ingredientRepository);
+			var newFrm = _formsFactory.CreateAddNewRecipeView(RecipeTypesList.getRecipeTypesList(), this);
 
 			recipeController.AddNewRecipe(newFrm, _recipeRepository);
         }
@@ -89,7 +89,7 @@ namespace CookIT.Controllers
         {
 			var recController = new RecipeController();
 			var newFrm = _formsFactory.CreateShowRecipeView();
-			recController.ShowRecipe(ID, newFrm, _recipeRepository, _ingredientRepository, this);
+			recController.ShowRecipe(ID, newFrm, _recipeRepository, this);
         }
 
         public void DeleteRecipe(int ID)
@@ -102,7 +102,7 @@ namespace CookIT.Controllers
         {
 			var recController = new RecipeController();
 			var newFrm = _formsFactory.CreateIngredientsQuantityView();
-			recController.GetIngredientQuant(view,newFrm, ingredients, this, _ingredientRepository);
+			recController.GetIngredientQuant(view,newFrm, ingredients, this);
         }
 
         public void GetQuanityForRecipe(IAddNewRecipeView view, Dictionary<string, string> values)
@@ -117,7 +117,7 @@ namespace CookIT.Controllers
         {
 			
 			var menuController = new MenuController();
-			var newFrm = _formsFactory.CreateNewMenuView(this, _recipeRepository);
+			var newFrm = _formsFactory.CreateNewMenuView(this, _recipeRepository.GetAllRecipes());
 			menuController.AddNewMenu(newFrm, _menuRepository);
 			
 			
@@ -137,5 +137,65 @@ namespace CookIT.Controllers
 			var newFrm = _formsFactory.CreateViewMenusView();
 			menController.ShowMenus(newFrm,_menuRepository, this);
 		}
-	}
+
+		public void RecommendationWindow()
+        {
+			var cont = new RecipeController();
+			var newFrm = _formsFactory.CreateSelectionWindow(RecipeTypesList.getRecipeTypesList(), this, _ingredientRepository.GetAllIngredientNames());
+			var recipeFrm = _formsFactory.CreateShowRecipeView();
+			cont.GetRecipeRecommentadion(newFrm, _recipeRepository, recipeFrm, this);
+        }
+
+        public void ShowIngredient(string name)
+        {
+			var cont = new IngredientController();
+			var newFrm = _formsFactory.CreateShowIngredientView();
+			cont.ShowIngredient(newFrm, name, _ingredientRepository);
+        }
+
+		public void ShowToMakeRecipe()
+        {
+			var recController = new RecipeController();
+			var newForm = _formsFactory.CreateShowToMakeView();
+			recController.ShowToMakeList(newForm, _recipeRepository, this);
+        }
+
+        public List<Meni> GetAllMenus()
+        {
+			return _menuRepository.GetAllMenus();
+        }
+
+        public List<Recipe> GetAllRecipes()
+        {
+			return _recipeRepository.GetAllRecipes();
+        }
+
+        public List<Ingredient> GetAllIngredients()
+        {
+			return _ingredientRepository.GetAllIngredients();
+        }
+
+        public List<Recipe> GetToMakeList()
+        {
+			return _recipeRepository.getAllToMakeRecipes();
+        }
+
+        public float calculateSumOfCalories(int ID)
+        {
+			return _recipeRepository.calculateSumOfCalories(ID);
+        }
+
+		public void AddToMakeList(int ID)
+        {
+			var controller = new RecipeController();
+			controller.AddRecipeToMakeList(ID, _recipeRepository);
+        }
+
+		public void RemoveFromToMakeList(int ID)
+        {
+			var controller = new RecipeController();
+			controller.RemoveFromToMakeList(ID, _recipeRepository);
+        }
+    }
 }
+

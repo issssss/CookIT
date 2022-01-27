@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CookIT.Model;
-using CookIT.Model.Repositories;
+
 
 
 namespace CookIT.PresentationLayer
@@ -19,13 +19,11 @@ namespace CookIT.PresentationLayer
     {
         private readonly List<Recipe> _recipeList = null;
         private readonly IMainFormController _controller;
-        private IRecipeRepository _recipeRepository = null;
-        private Dictionary<string, string> ingredientQuantity = null;
-        public frmAddMenu(IMainFormController incont, IRecipeRepository ingrep)
+        
+        public frmAddMenu(IMainFormController incont, List<Recipe> recipes)
         {
-            _recipeList = ingrep.GetAllRecipes();
+            _recipeList = recipes;
             _controller = incont;
-            _recipeRepository = ingrep;
 
 
             InitializeComponent();
@@ -57,7 +55,7 @@ namespace CookIT.PresentationLayer
 
                 if (cmbRecipes.SelectedItem == null)
                 {
-                    MessageBox.Show("Please choose a type of the recipe.");
+                    MessageBox.Show("Please choose an entree");
                     return null;
                 }
 
@@ -72,7 +70,7 @@ namespace CookIT.PresentationLayer
 
                 if (comboBox1.SelectedItem == null)
                 {
-                    MessageBox.Show("Please choose a type of the recipe.");
+                    MessageBox.Show("Please choose a main course.");
                     return null;
                 }
 
@@ -88,7 +86,7 @@ namespace CookIT.PresentationLayer
 
                 if (comboBox2.SelectedItem == null)
                 {
-                    MessageBox.Show("Please choose a type of the recipe.");
+                    MessageBox.Show("Please choose a desert.");
                     return null;
                 }
 

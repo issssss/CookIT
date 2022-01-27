@@ -80,6 +80,12 @@
     <Compile Include="frmAddRecipe.Designer.cs">
       <DependentUpon>frmAddRecipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChooseForRecommendation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseForRecommendation.Designer.cs">
+      <DependentUpon>frmChooseForRecommendation.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmIngredientQuantity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,18 @@
     </Compile>
     <Compile Include="frmMainWindow.Designer.cs">
       <DependentUpon>frmMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowIngredient.Designer.cs">
+      <DependentUpon>frmShowIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmToMakeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmToMakeView.Designer.cs">
+      <DependentUpon>frmToMakeView.cs</DependentUpon>
     </Compile>
     <Compile Include="frmViewMenus.cs">
       <SubType>Form</SubType>
@@ -129,11 +147,20 @@
     <EmbeddedResource Include="frmAddRecipe.resx">
       <DependentUpon>frmAddRecipe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmChooseForRecommendation.resx">
+      <DependentUpon>frmChooseForRecommendation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIngredientQuantity.resx">
       <DependentUpon>frmIngredientQuantity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainWindow.resx">
       <DependentUpon>frmMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowIngredient.resx">
+      <DependentUpon>frmShowIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmToMakeView.resx">
+      <DependentUpon>frmToMakeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewMenus.resx">
       <DependentUpon>frmViewMenus.cs</DependentUpon>

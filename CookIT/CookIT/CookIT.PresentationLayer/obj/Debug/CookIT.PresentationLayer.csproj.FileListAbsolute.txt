@@ -64,3 +64,6 @@ C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.frmIngredientQuantity.resources
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.frmViewMenus.resources
 C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.frmAddMenu.resources
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.frmChooseForRecommendation.resources
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.frmShowIngredient.resources
+C:\Users\Izabela\Desktop\CookIT\CookIT\CookIT.PresentationLayer\obj\Debug\CookIT.PresentationLayer.frmToMakeView.resources

@@ -35,14 +35,16 @@ namespace CookIT.Controllers
             }
             catch(Exception e)
             {
-                    MessageBox.Show("Please fill up the ingredient values.");
+                    MessageBox.Show("The ingredient values are incorrect.");
                     return;
             }
         }
 
-        public void ShowIngredients(IShowIngredientsView showIngredients, IIngredientRepository ingRepository, IMainFormController cont)
+
+        public void ShowIngredient(IShowIngredientView ingredientView, string name, IIngredientRepository ingredRep)
         {
-            showIngredients.ShowModaless(cont, ingRepository);
+            Ingredient ingredient = ingredRep.getIngredientByName(name);
+            ingredientView.showIngredient(ingredient);
         }
     }
 }

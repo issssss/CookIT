@@ -9,24 +9,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CookIT.Model;
-using CookIT.Model.Repositories;
+
 
 namespace CookIT.PresentationLayer
 {
     public partial class frmViewRecipes : Form, IViewRecipesView
     {
         private IMainFormController _controller = null;
-        private IRecipeRepository _repository = null;
         private List<Recipe> _recipeList = null;
         public frmViewRecipes()
         {
             InitializeComponent();
         }
-        public void ShowModaless(IMainFormController inMainController, IRecipeRepository inListRec)
+        public void ShowModaless(IMainFormController inMainController, List<Recipe> recipes)
         {
             _controller = inMainController;
-            _repository = inListRec;
-            _recipeList = inListRec.GetAllRecipes();
+            _recipeList = recipes;
 
             UpdateList();
 
@@ -38,7 +36,7 @@ namespace CookIT.PresentationLayer
         {
             this.Hide();
             _controller.AddRecipe();
-            _recipeList = this._repository.GetAllRecipes();
+            _recipeList = _controller.GetAllRecipes();
             UpdateList();
             this.Show();
         }
@@ -63,15 +61,18 @@ namespace CookIT.PresentationLayer
 
         private void recipeList_DoubleClick(object sender, EventArgs e)
         {
+           
             if (recipeList.SelectedItems[0] != null)
             {
-             
                 string name = recipeList.SelectedItems[0].Text;
-                int ind = _repository.getRecipeByName(name).Id;
+                var rec = (from l in _recipeList where l.Name == name select l).First();
+                int ID = rec.Id;
 
-                _controller.ShowRecipe(ind);
-    
+                _controller.ShowRecipe(ID);    
             }
+            _recipeList = _controller.GetAllRecipes();
+            
+
         }
 
         private void cancel_Click(object sender, EventArgs e)
@@ -84,9 +85,10 @@ namespace CookIT.PresentationLayer
             if(recipeList.SelectedItems.Count > 0)
             {
                 string name = recipeList.SelectedItems[0].Text;
-                int ind = _repository.getRecipeByName(name).Id;
+                int ind = recipeList.SelectedIndices[0];
+                int ID = _recipeList[ind].Id;
 
-                _controller.DeleteRecipe(ind);
+                _controller.DeleteRecipe(ID);
                 recipeList.Items.Clear();
                 UpdateList();
                 
@@ -99,7 +101,7 @@ namespace CookIT.PresentationLayer
         }
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
-            // Call FindItemWithText with the contents of the textbox.
+            
             ListViewItem foundItem =
                 recipeList.FindItemWithText(searchBox.Text, false, 0, true);
             if (foundItem != null)

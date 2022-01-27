@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CookIT.BaseLib;
-using CookIT.Model.Repositories;
+using CookIT.Model;
 
 namespace CookIT.PresentationLayer
 {
@@ -18,9 +18,9 @@ namespace CookIT.PresentationLayer
             return newFrm;
         }
 
-        public IAddNewRecipeView CreateAddNewRecipeView(List<string> inRecipeType, IMainFormController cont, IIngredientRepository rep)
+        public IAddNewRecipeView CreateAddNewRecipeView(List<string> inRecipeType, IMainFormController cont)
         {
-			var newFrm = new frmAddRecipe(inRecipeType, cont, rep);
+			var newFrm = new frmAddRecipe(inRecipeType, cont);
 			return newFrm;
         }
 
@@ -48,9 +48,27 @@ namespace CookIT.PresentationLayer
             return newFrom;
         }
 
-        public IAddNewMenuView CreateNewMenuView(IMainFormController cont, IRecipeRepository rep)
+        public IAddNewMenuView CreateNewMenuView(IMainFormController cont, List<Recipe> recipes)
         {
-            var newForm = new frmAddMenu(cont, rep);
+            var newForm = new frmAddMenu(cont, recipes);
+            return newForm;
+        }
+
+        public IChooseForRecommendationView CreateSelectionWindow(List<string> types, IMainFormController cont, List<string> ingred)
+        {
+            var newForm = new frmChooseForRecommendation(types, cont, ingred);
+            return newForm;
+        }
+
+        public IShowIngredientView CreateShowIngredientView()
+        {
+            var newFrm = new frmShowIngredient();
+            return newFrm;
+        }
+
+        public IShowToMakeView CreateShowToMakeView()
+        {
+            var newForm = new frmToMakeView();
             return newForm;
         }
     }

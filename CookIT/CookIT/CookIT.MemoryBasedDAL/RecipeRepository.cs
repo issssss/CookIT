@@ -17,6 +17,7 @@ namespace CookIT.MemoryBasedDAL
         private static RecipeRepository _instance;
 
         private readonly List<Recipe> _listRecipes = new List<Recipe>();
+        private readonly List<Recipe> _toMakeRecipes = new List<Recipe>();
 
         private RecipeRepository()
         {
@@ -53,6 +54,32 @@ namespace CookIT.MemoryBasedDAL
             _listRecipes.Add(addRec);
        
 
+        }
+
+        public void addToMakeRecipe(int ID)
+        {
+            Recipe rec = getRecipeByID(ID);
+            // provjeriti da li već postoji recount s tim imenom
+            if (_toMakeRecipes.Any(r => r.Name == rec.Name))
+            {
+
+                throw new RecipeAlreadyExists();
+            }
+
+            _toMakeRecipes.Add(rec);
+
+
+        }
+
+        public void removeToMakeRecipe(int recID)
+        {
+            Recipe toRemove = this.getRecipeByID(recID);
+            this._toMakeRecipes.Remove(toRemove);
+        }
+
+        public List<Recipe> getAllToMakeRecipes()
+        {
+            return _toMakeRecipes;
         }
 
         public void deleteRecipe(int recID)
@@ -133,6 +160,39 @@ namespace CookIT.MemoryBasedDAL
                 sum += ingred.Kcal;
             }
             return sum/recipe.Ingredients.Keys.Count;
+        }
+
+        public int getRecommendation(string typeOfRecipe, string ingredient)
+        {
+            
+            Random _random = new Random();
+
+            if (typeOfRecipe == "" && ingredient == "") return _listRecipes[_random.Next(0, (_listRecipes.Count - 1))].Id;
+
+            List<Recipe> toChooseFrom = new List<Recipe>();
+            for(int i = 0; i < _listRecipes.Count; i++)
+            {
+                Recipe recipe = _listRecipes[i];
+                if (typeOfRecipe != "")
+                {
+                    if(recipe.Type == typeOfRecipe)
+                    {
+                        if (ingredient != "" && !recipe.Ingredients.ContainsKey(ingredient)) continue;
+                        toChooseFrom.Add(recipe);
+                    }
+                }
+                else if(ingredient != "")
+                {
+                    if (recipe.Ingredients.ContainsKey(ingredient)) toChooseFrom.Add(recipe);
+                }
+
+            }
+            if(toChooseFrom.Count > 0)
+            {
+                int randInd = _random.Next(0, (toChooseFrom.Count - 1));
+                return toChooseFrom[randInd].Id;
+            }
+            return -1;
         }
     }
 }

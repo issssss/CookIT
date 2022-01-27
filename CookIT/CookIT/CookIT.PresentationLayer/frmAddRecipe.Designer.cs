@@ -155,6 +155,7 @@ namespace CookIT.PresentationLayer
             this.cmbRecipeType.Name = "cmbRecipeType";
             this.cmbRecipeType.Size = new System.Drawing.Size(176, 28);
             this.cmbRecipeType.TabIndex = 1;
+            this.cmbRecipeType.Text = "--Select--";
             // 
             // txtRecipeText
             // 
@@ -171,6 +172,7 @@ namespace CookIT.PresentationLayer
             // ingredientList
             // 
             this.ingredientList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
+            this.ingredientList.CheckBoxes = true;
             this.ingredientList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.ingredientList.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold);
@@ -185,6 +187,7 @@ namespace CookIT.PresentationLayer
             this.ingredientList.TabIndex = 11;
             this.ingredientList.UseCompatibleStateImageBehavior = false;
             this.ingredientList.View = System.Windows.Forms.View.Details;
+            this.ingredientList.DoubleClick += new System.EventHandler(this.ingredientList_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -263,12 +266,12 @@ namespace CookIT.PresentationLayer
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Ink Free", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(163)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAddRecipe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add new Recipe";
+            this.Text = "Add New Recipe";
             this.Load += new System.EventHandler(this.frmAddRecipe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

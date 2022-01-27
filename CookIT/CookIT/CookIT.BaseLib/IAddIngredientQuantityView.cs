@@ -9,6 +9,6 @@ namespace CookIT.BaseLib
 {
     public interface IAddIngredientQuantityView
     {
-        void ShowModaless(IAddNewRecipeView view, List<string> ingredientNames, IMainFormController inMainController, IIngredientRepository ing);
+        void ShowModaless(IAddNewRecipeView view, List<string> ingredientNames, IMainFormController inMainController);
     }
 }

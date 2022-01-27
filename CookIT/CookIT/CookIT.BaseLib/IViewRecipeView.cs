@@ -10,6 +10,6 @@ namespace CookIT.BaseLib
 {
     public interface IViewRecipesView : IObserver
     {
-        void ShowModaless(IMainFormController inMainController, IRecipeRepository rep);
+        void ShowModaless(IMainFormController inMainController, List<Recipe> recipes);
     }
 }

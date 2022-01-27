@@ -17,7 +17,7 @@ namespace CookIT.PresentationLayer
     {
         List<string> _ingredients = null;
         IMainFormController _cont;
-        IIngredientRepository _ing;
+     
         List<TextBox> textBoxs = null;
         IAddNewRecipeView parentview = null;
         public frmIngredientQuantity()
@@ -25,11 +25,11 @@ namespace CookIT.PresentationLayer
             InitializeComponent();
         }
 
-        public void ShowModaless(IAddNewRecipeView view, List<string> ingreds, IMainFormController inMainController, IIngredientRepository ing)
+        public void ShowModaless(IAddNewRecipeView view, List<string> ingreds, IMainFormController inMainController)
         {
             _ingredients = ingreds;
             _cont = inMainController;
-            _ing = ing;
+
             parentview = view;
             this.panel.RowCount = ingreds.Count;
             textBoxs = new List<TextBox>();

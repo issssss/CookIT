@@ -196,9 +196,11 @@ namespace CookIT.PresentationLayer
             // searchBox
             // 
             this.searchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
+            this.searchBox.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold);
+            this.searchBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.searchBox.Location = new System.Drawing.Point(186, 73);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(504, 22);
+            this.searchBox.Size = new System.Drawing.Size(504, 27);
             this.searchBox.TabIndex = 14;
             this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
@@ -231,7 +233,7 @@ namespace CookIT.PresentationLayer
             this.Controls.Add(this.pictureBox4);
             this.Font = new System.Drawing.Font("Ink Free", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(163)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmViewMenus";

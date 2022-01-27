@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CookIT.BaseLib;
-using CookIT.Model.Repositories;
 using CookIT.Model;
 
 namespace CookIT.PresentationLayer
@@ -17,39 +16,37 @@ namespace CookIT.PresentationLayer
     {
         private Recipe _recipe;
         private IMainFormController _cont;
-        private IRecipeRepository _recrep;
+
         public frmShowRecipeView()
         {
             InitializeComponent();
         }
 
-        public void showRecipe(int ID, IMainFormController cont, IRecipeRepository recrep, IIngredientRepository ingrep)
+        public void showRecipe(int ID, IMainFormController cont, Recipe recipe)
         {
             Dictionary<string, string> ingredInd = new Dictionary<string, string>();
-            _recipe = recrep.getRecipeByID(ID);
+            _recipe = recipe;
             _cont = cont;
-            _recrep = recrep;
             ingredInd = _recipe.Ingredients;
             List<Ingredient> ingreNames = new List<Ingredient>();
 
-            foreach(string ind in ingredInd.Keys)
+            foreach (string ind in ingredInd.Keys)
             {
-                Ingredient ingre = ingrep.getIngredientByName(ind);
-                ingreNames.Add(ingre);
-                ListViewItem lv = new ListViewItem(ingre.Name);
-                lv.Name = ingre.Name;
+
+                ListViewItem lv = new ListViewItem(ind);
+                lv.Name = ind;
                 lv.SubItems.Add(ingredInd[ind]);
                 ingredientList.Items.Add(lv);
-                
+
             }
             this.txtRecipeText.Text = _recipe.Text;
             this.label1.Text = _recipe.Name;
             if (_recipe.Grade != "") this.txtRecipeGrade.Text = _recipe.Grade;
-            this.label4.Text = recrep.calculateSumOfCalories(ID).ToString();
+            this.label4.Text = _cont.calculateSumOfCalories(ID).ToString();
             this.Show();
         }
 
-  
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -68,6 +65,12 @@ namespace CookIT.PresentationLayer
 
         }
 
-    
+        private void ingredientList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+                _cont.ShowIngredient(ingredientList.SelectedItems[0].Text);
+           
+  
+        }
     }
 }
