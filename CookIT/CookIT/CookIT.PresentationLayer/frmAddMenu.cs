@@ -40,6 +40,8 @@ namespace CookIT.PresentationLayer
             cmbRecipes.AutoCompleteSource = AutoCompleteSource.ListItems;
             foreach (Recipe s in _recipeList)
             {
+                if (comboBox1.Items.Contains(s.Name))
+                    continue;
                 comboBox1.Items.Add(s.Name);
                 comboBox2.Items.Add(s.Name);
                 cmbRecipes.Items.Add(s.Name);
@@ -99,12 +101,7 @@ namespace CookIT.PresentationLayer
         {
             if (this.ShowDialog() == DialogResult.OK)
             {
-                if (MenuName == "")
-                {
-                    MessageBox.Show("Please choose a name of the menu.");
-                   
-                   // return false;
-                }
+                
                 return true;
             }
             else

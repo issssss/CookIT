@@ -36,7 +36,10 @@ namespace CookIT.PresentationLayer
             cmbRecipeType.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cmbRecipeType.AutoCompleteSource = AutoCompleteSource.ListItems;
             foreach (string s in _recipeTypes)
+            {
+                if (cmbRecipeType.Items.Contains(s)) continue;
                 cmbRecipeType.Items.Add(s);
+            }
 
         }
         private void addIngredientItem_Click(object sender, EventArgs e)

@@ -22,6 +22,7 @@ namespace CookIT.Controllers
                 try
                 {
                     string name = inForm.MenuName;
+                    if (name == "") throw new ArgumentNullException();
                     string entree = inForm.Entree;
                     string mainCourse = inForm.MainCourse;
                     string desert = inForm.Desert;
@@ -39,6 +40,8 @@ namespace CookIT.Controllers
                 {
                     if(e is MenuAlreadyExists)
                         MessageBox.Show("The name of the menu is already taken.");
+                    if(e is ArgumentNullException)
+                        MessageBox.Show("Please choose a name of the menu.");
                     AddNewMenu(inForm, repository, recRepository);
                     return;
                 }
