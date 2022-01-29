@@ -51,10 +51,10 @@ namespace CookIT.PresentationLayer
               
                 ListViewItem lvt = new ListViewItem(acc.Name);
                 lvt.Name = acc.Name;
-                lvt.SubItems.Add(acc.Entree);
+                lvt.SubItems.Add(acc.Entree.Name);
                 
-                lvt.SubItems.Add(acc.MainCourse);
-                lvt.SubItems.Add(acc.Desert);
+                lvt.SubItems.Add(acc.MainCourse.Name);
+                lvt.SubItems.Add(acc.Dessert.Name);
 
                 menuList.Items.Add(lvt);
             }
@@ -70,10 +70,11 @@ namespace CookIT.PresentationLayer
         {
             if(menuList.SelectedItems.Count > 0)
             {
-                int ind = menuList.SelectedIndices[0];
-                int id = _menuList[ind].Id;
+                string name = menuList.SelectedItems[0].Text;
+                var rec = (from l in _menuList where l.Name == name select l).First();
+                int ID = rec.Id;
 
-                _controller.DeleteMenu(id);
+                _controller.DeleteMenu(ID);
                 menuList.Items.Clear();
                 UpdateList();
             }

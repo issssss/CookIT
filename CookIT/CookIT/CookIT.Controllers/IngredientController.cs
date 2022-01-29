@@ -12,7 +12,7 @@ using CookIT.BaseLib;
 
 namespace CookIT.Controllers
 {
-    public class IngredientController
+    public class IngredientController : IIngredientController
     {
         public void AddNewIngredient(IAddNewIngredientView inForm, IIngredientRepository repository)
         {
@@ -35,7 +35,10 @@ namespace CookIT.Controllers
             }
             catch(Exception e)
             {
-                    MessageBox.Show("The ingredient values are incorrect.");
+                    if (e is IngredientAlreadyExists)
+                        MessageBox.Show("The ingredient name is already taken.");
+                   // MessageBox.Show("The ingredient values are incorrect.");
+                    AddNewIngredient(inForm, repository);
                     return;
             }
         }

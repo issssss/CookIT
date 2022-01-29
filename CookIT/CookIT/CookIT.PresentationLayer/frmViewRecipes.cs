@@ -47,7 +47,7 @@ namespace CookIT.PresentationLayer
             {
                 Recipe acc = _recipeList[i];
             
-                string accType = acc.Type;
+                string accType = RecipeTypesList.RecTypeDict[acc.Type];
                 if (recipeList.Items.ContainsKey(acc.Name))
                     continue;
               
@@ -85,8 +85,8 @@ namespace CookIT.PresentationLayer
             if(recipeList.SelectedItems.Count > 0)
             {
                 string name = recipeList.SelectedItems[0].Text;
-                int ind = recipeList.SelectedIndices[0];
-                int ID = _recipeList[ind].Id;
+                var rec = (from l in _recipeList where l.Name == name select l).First();
+                int ID = rec.Id;
 
                 _controller.DeleteRecipe(ID);
                 recipeList.Items.Clear();

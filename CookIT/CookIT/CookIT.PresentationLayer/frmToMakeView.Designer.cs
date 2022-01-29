@@ -104,6 +104,7 @@ namespace CookIT.PresentationLayer
             // 
             // searchBox
             // 
+            this.searchBox.AllowDrop = true;
             this.searchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
             this.searchBox.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -202,6 +203,7 @@ namespace CookIT.PresentationLayer
             this.cmbRecipes.Size = new System.Drawing.Size(460, 28);
             this.cmbRecipes.TabIndex = 24;
             this.cmbRecipes.Text = "--Select--";
+
             // 
             // label3
             // 

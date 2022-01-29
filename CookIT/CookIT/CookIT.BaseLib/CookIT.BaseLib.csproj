@@ -51,7 +51,10 @@
     <Compile Include="IAddNewMenuView.cs" />
     <Compile Include="IAddNewRecipeView.cs" />
     <Compile Include="IChooseForRecommendationView.cs" />
+    <Compile Include="IIngredientController.cs" />
     <Compile Include="IMainController.cs" />
+    <Compile Include="IMenuController.cs" />
+    <Compile Include="IRecipeController.cs" />
     <Compile Include="IShowIngredientView.cs" />
     <Compile Include="IShowMenuView.cs" />
     <Compile Include="IShowRecipe.cs" />

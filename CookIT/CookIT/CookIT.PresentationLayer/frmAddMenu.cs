@@ -32,6 +32,12 @@ namespace CookIT.PresentationLayer
 
         private void frmAddMenu_Load(object sender, EventArgs e)
         {
+            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
+            comboBox2.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox2.AutoCompleteSource = AutoCompleteSource.ListItems;
+            cmbRecipes.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cmbRecipes.AutoCompleteSource = AutoCompleteSource.ListItems;
             foreach (Recipe s in _recipeList)
             {
                 comboBox1.Items.Add(s.Name);
@@ -40,13 +46,7 @@ namespace CookIT.PresentationLayer
             }
 
         }
-        private void addIngredientItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            _controller.AddIngredient();
-            this.Show();
-
-        }
+      
         public string MenuName => txtMenuName.Text;
         public string Entree
         {
@@ -56,7 +56,7 @@ namespace CookIT.PresentationLayer
                 if (cmbRecipes.SelectedItem == null)
                 {
                     MessageBox.Show("Please choose an entree");
-                    return null;
+                    throw new ArgumentException();
                 }
 
                 return cmbRecipes.SelectedItem.ToString();
@@ -71,7 +71,7 @@ namespace CookIT.PresentationLayer
                 if (comboBox1.SelectedItem == null)
                 {
                     MessageBox.Show("Please choose a main course.");
-                    return null;
+                    throw new ArgumentException();
                 }
 
                 return comboBox1.SelectedItem.ToString();
@@ -87,7 +87,7 @@ namespace CookIT.PresentationLayer
                 if (comboBox2.SelectedItem == null)
                 {
                     MessageBox.Show("Please choose a desert.");
-                    return null;
+                    throw new ArgumentException();
                 }
 
                 return comboBox2.SelectedItem.ToString();
@@ -99,11 +99,11 @@ namespace CookIT.PresentationLayer
         {
             if (this.ShowDialog() == DialogResult.OK)
             {
-                if (MenuName == "" || Entree == null || MainCourse == null || Desert == null)
+                if (MenuName == "")
                 {
-                    MessageBox.Show("Please choose a name and the recipes for your courses.");
+                    MessageBox.Show("Please choose a name of the menu.");
                    
-                    return false;
+                   // return false;
                 }
                 return true;
             }

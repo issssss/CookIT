@@ -33,6 +33,8 @@ namespace CookIT.PresentationLayer
 
         private void frmAddRecipe_Load(object sender, EventArgs e)
         {
+            cmbRecipeType.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cmbRecipeType.AutoCompleteSource = AutoCompleteSource.ListItems;
             foreach (string s in _recipeTypes)
                 cmbRecipeType.Items.Add(s);
 
@@ -45,7 +47,19 @@ namespace CookIT.PresentationLayer
             this.Show();
 
         }
-        public string RecipeName => txtRecipeName.Text;
+        public string RecipeName {
+            get
+            {
+                if (txtRecipeName.Text == "")
+                {
+                    MessageBox.Show("The name of the recipe is empty.");
+                    throw new ArgumentException();
+
+                }
+                
+                return txtRecipeName.Text;
+            }
+        }
         public string RecipeType
         {
             get
@@ -54,7 +68,7 @@ namespace CookIT.PresentationLayer
                 if (cmbRecipeType.SelectedItem == null)
                 {
                     MessageBox.Show("Please choose a type of the recipe.");
-                    return null;
+                    throw new ArgumentException();
                 }
 
                 return cmbRecipeType.SelectedItem.ToString();
@@ -71,12 +85,7 @@ namespace CookIT.PresentationLayer
         {
             if (this.ShowDialog() == DialogResult.OK)
             {
-                if (RecipeName == null || RecipeType == null || RecipeIngred == null)
-                {
-                    MessageBox.Show("Please fill in the recipe form, including the ingredients quantity.");
-                   
-                    return false;
-                }
+                
                 return true;
             }
             else
@@ -128,8 +137,7 @@ namespace CookIT.PresentationLayer
         public void SaveQuantity(Dictionary<string, string> values)
         {
             ingredientQuantity = values;
-            //InitializeComponent();
-            UpdateList();
+           
         }
 
         private void ingredientList_SelectedIndexChanged(object sender, EventArgs e)
@@ -138,6 +146,23 @@ namespace CookIT.PresentationLayer
                 _controller.ShowIngredient(ingredientList.SelectedItems[0].Text);
 
            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            ListViewItem foundItem =
+               ingredientList.FindItemWithText(textBox1.Text, false, 0, true);
+            if (foundItem != null)
+            {
+                ingredientList.TopItem = foundItem;
+                ingredientList.Items.Clear();
+                ingredientList.Items.Add(foundItem);
+                UpdateList();
+            }
+            else
+            {
+                MessageBox.Show("No such ingredient... :(");
+            }
         }
     }
 }

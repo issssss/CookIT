@@ -13,10 +13,10 @@ using System.Diagnostics;
 
 namespace CookIT.Controllers
 {
-    public class RecipeController
+    public class RecipeController: IRecipeController
     {
 
-        public void AddNewRecipe(IAddNewRecipeView inForm, IRecipeRepository recipeRepository)
+        public void AddNewRecipe(IAddNewRecipeView inForm, IRecipeRepository recipeRepository, IIngredientRepository ingredientRep)
         {
             if (inForm.ShowModalView() == true)
             {
@@ -28,13 +28,18 @@ namespace CookIT.Controllers
                     Dictionary<string, string> RecIngredients = inForm.RecipeIngred; //new List<int> { 1, 2, 3 };
                     Debug.WriteLine(RecIngredients.Count);
                     int ID = recipeRepository.getNewId();
-
-                    Recipe newRecipe = RecipeFactory.CreateRecipe(ID, Name, RecType, RecIngredients, RecText, "");
+                    List<Ingredient> ingredients = new List<Ingredient>();
+                    foreach (string name in RecIngredients.Keys)
+                        ingredients.Add(ingredientRep.getIngredientByName(name));
+                    Recipe newRecipe = RecipeFactory.CreateRecipe(ID, Name, RecType, RecIngredients, RecText, ingredients, "");
                     recipeRepository.addRecipe(newRecipe);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Please recipe incorrectly filled, please try again.");
+                    if(ex is RecipeAlreadyExists)
+                        MessageBox.Show("The name of the recipe already exists.");
+                    MessageBox.Show("Choose ingredients and their quantity.");
+                    AddNewRecipe(inForm, recipeRepository, ingredientRep);
       
                     //throw;
                     return; 

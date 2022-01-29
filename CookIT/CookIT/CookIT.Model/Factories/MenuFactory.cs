@@ -9,10 +9,10 @@ namespace CookIT.Model.Factories
 {
     public class MenuFactory
     {
-        public static Meni CreateMenu(int ID, string name, string ent, string mainCor, string des)
+        public static Meni CreateMenu(int ID, string name, List<Recipe> chosenCourses)
         {
             Meni menu = null;
-            menu = new Meni(ID, name, ent, mainCor, des);
+            menu = new Meni(ID, name, chosenCourses);
             return menu;
 
         }

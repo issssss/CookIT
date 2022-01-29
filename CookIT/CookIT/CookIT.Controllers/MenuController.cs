@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace CookIT.Controllers
 {
-    public class MenuController
+    public class MenuController:IMenuController
     {
-        public void AddNewMenu(IAddNewMenuView inForm, IMenuRepository repository)
+        public void AddNewMenu(IAddNewMenuView inForm, IMenuRepository repository, IRecipeRepository recRepository)
         {
             if(inForm.ShowModalView() == true)
             {
@@ -26,14 +26,21 @@ namespace CookIT.Controllers
                     string mainCourse = inForm.MainCourse;
                     string desert = inForm.Desert;
                     int ID = repository.getNewID();
-                    Meni newMenu = MenuFactory.CreateMenu(ID, name, entree, mainCourse, desert);
+                    List<Recipe> listOfCourses = new List<Recipe>();
+                    listOfCourses.Add(recRepository.getRecipeByName(entree));
+                    listOfCourses.Add(recRepository.getRecipeByName(mainCourse));
+                    listOfCourses.Add(recRepository.getRecipeByName(desert));
+                    Meni newMenu = MenuFactory.CreateMenu(ID, name, listOfCourses);
                     repository.addMenu(newMenu);
 
 
                 }
                 catch(Exception e)
                 {
-                    MessageBox.Show("The name of the menu is already taken.");
+                    if(e is MenuAlreadyExists)
+                        MessageBox.Show("The name of the menu is already taken.");
+                    AddNewMenu(inForm, repository, recRepository);
+                    return;
                 }
             }
         }

@@ -37,6 +37,10 @@ namespace CookIT.PresentationLayer
 
         private void frmChoose_Load(object sender, EventArgs e)
         {
+            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
+            cmbRecipes.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cmbRecipes.AutoCompleteSource = AutoCompleteSource.ListItems;
             foreach (string s in _recipeTypes)
                 cmbRecipes.Items.Add(s);
             foreach (string s in _ingredients)

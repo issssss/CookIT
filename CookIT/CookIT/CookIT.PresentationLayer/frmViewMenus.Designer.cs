@@ -162,7 +162,7 @@ namespace CookIT.PresentationLayer
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Desert";
+            this.columnHeader4.Text = "Dessert";
             this.columnHeader4.Width = 319;
             // 
             // pictureBox4
@@ -238,7 +238,7 @@ namespace CookIT.PresentationLayer
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmViewMenus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add new Menu";
+            this.Text = "View Menus";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoName)).EndInit();

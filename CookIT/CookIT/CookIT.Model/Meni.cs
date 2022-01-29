@@ -11,17 +11,17 @@ namespace CookIT.Model
         public static readonly int UndefinedMenuId = -1;
         public Meni() : base(UndefinedMenuId) { }
 
-        public Meni(int ID, string name, string entree, string main_cour, string desert): base(ID)
+        public Meni(int ID, string name, List<Recipe> listOfCourses): base(ID)
         {
             Name = name;
-            Entree = entree;
-            MainCourse = main_cour;
-            Desert = desert;
+            Entree = listOfCourses[0];
+            MainCourse = listOfCourses[1];
+            Dessert = listOfCourses[2];
         }
 
-        public string Entree { get; set; }
         public string Name { get; set; }
-        public string MainCourse { get; set; }
-        public string Desert { get; set; }
+        public Recipe Entree { get; set; }
+        public Recipe MainCourse { get; set; }
+        public Recipe Dessert { get; set; }
     }
 }

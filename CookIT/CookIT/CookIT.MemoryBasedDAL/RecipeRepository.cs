@@ -39,6 +39,7 @@ namespace CookIT.MemoryBasedDAL
         }
         public void addRecipe(Recipe addRec)
         {
+            
             // provjeriti da li već postoji recount s tim imenom
             if (_listRecipes.Any(rec => rec.Name == addRec.Name))
             {
@@ -145,7 +146,8 @@ namespace CookIT.MemoryBasedDAL
         {
             Recipe oldRecipa = getRecipeByID(ID);
             deleteRecipe(ID);
-            Recipe editedRecipe = RecipeFactory.CreateRecipe(ID, oldRecipa.Name, oldRecipa.Type, oldRecipa.Ingredients, edRec, grade);
+            string type = RecipeTypesList.RecTypeDict[oldRecipa.Type];
+            Recipe editedRecipe = RecipeFactory.CreateRecipe(ID, oldRecipa.Name, type, oldRecipa.Ingredients, edRec, oldRecipa.IngredientsList, grade);
             this._listRecipes.Add(editedRecipe);
         }
 
@@ -175,7 +177,7 @@ namespace CookIT.MemoryBasedDAL
                 Recipe recipe = _listRecipes[i];
                 if (typeOfRecipe != "")
                 {
-                    if(recipe.Type == typeOfRecipe)
+                    if(RecipeTypesList.RecTypeDict[recipe.Type] == typeOfRecipe)
                     {
                         if (ingredient != "" && !recipe.Ingredients.ContainsKey(ingredient)) continue;
                         toChooseFrom.Add(recipe);

@@ -58,7 +58,7 @@ namespace CookIT.PresentationLayer
                 ListViewItem lv = new ListViewItem();
                 lv.Name = r.Name;
                 lv.Text = r.Name;
-                lv.SubItems.Add(r.Type);
+                lv.SubItems.Add(RecipeTypesList.RecTypeDict[r.Type]);
                 recipeList.Items.Add(lv);
             }
             this.Show();
@@ -66,7 +66,9 @@ namespace CookIT.PresentationLayer
 
         private void frmRecipes_Load(object sender, EventArgs e) {
 
-           List<Recipe> allRecipes = _cont.GetAllRecipes();
+            cmbRecipes.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cmbRecipes.AutoCompleteSource = AutoCompleteSource.ListItems;
+            List<Recipe> allRecipes = _cont.GetAllRecipes();
             foreach (Recipe r in allRecipes)
                 cmbRecipes.Items.Add(r.Name);
         }
@@ -80,9 +82,10 @@ namespace CookIT.PresentationLayer
         {
             if(recipeList.SelectedItems.Count > 0)
             {
-                int ind = recipeList.SelectedIndices[0];
-                Recipe recipe = _toMakeList[ind];
-                _cont.RemoveFromToMakeList(recipe.Id);
+                string name = recipeList.SelectedItems[0].Text;
+                var rec = (from l in _toMakeList where l.Name == name select l).First();
+                int ID = rec.Id;
+                _cont.RemoveFromToMakeList(ID);
                 _toMakeList = _cont.GetToMakeList();
                 recipeList.Items.Clear();
                 UpdateList();
@@ -105,7 +108,6 @@ namespace CookIT.PresentationLayer
 
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
-            // Call FindItemWithText with the contents of the textbox.
             ListViewItem foundItem =
                 recipeList.FindItemWithText(searchBox.Text, false, 0, true);
             if (foundItem != null)
@@ -120,7 +122,10 @@ namespace CookIT.PresentationLayer
                 MessageBox.Show("No such menu... :(");
             }
         }
+
+
     }
+
 
 
 }

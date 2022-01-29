@@ -33,10 +33,11 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void DoesRecipeWithNameAlreadyExistTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino",ingredients, "");
             recRep.addRecipe(newRecipe);
-            Recipe newRecipe2 = RecipeFactory.CreateRecipe(5, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe2 = RecipeFactory.CreateRecipe(5, "Medenjaci", "Sweet", indIngred, "Fino", ingredients,"");
             recRep.addRecipe(newRecipe2);
 
 
@@ -46,10 +47,11 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void CreatingThreeRecipesTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe1 = RecipeFactory.CreateRecipe(1, "Riza s povrcem", "ljuto", indIngred, "Puno paprike", "");
-            Recipe newRecipe2 = RecipeFactory.CreateRecipe(2, "Cokoladna torta", "Sweet", indIngred, "Slag na vrhu", "");
-            Recipe newRecipe3 = RecipeFactory.CreateRecipe(3, "Espresso", "gorko", indIngred, "Nije za slabe ljude", "");
+            Recipe newRecipe1 = RecipeFactory.CreateRecipe(1, "Riza s povrcem", "Hot", indIngred, "Puno paprike", ingredients,"");
+            Recipe newRecipe2 = RecipeFactory.CreateRecipe(2, "Cokoladna torta", "Sweet", indIngred, "Slag na vrhu", ingredients, "");
+            Recipe newRecipe3 = RecipeFactory.CreateRecipe(3, "Espresso", "Bitter", indIngred, "Nije za slabe ljude", ingredients,"");
             recRep.addRecipe(newRecipe1);
             recRep.addRecipe(newRecipe2);
             recRep.addRecipe(newRecipe3);
@@ -63,8 +65,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void AddingTwoSameRecipesTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino","");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino",ingredients, "");
             recRep.addRecipe(newRecipe);
             recRep.addRecipe(newRecipe);
 
@@ -76,8 +79,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void FindNoneExistingRecipeByName()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", ingredients, "");
             recRep.addRecipe(newRecipe);
 
             Recipe recipe2 = recRep.getRecipeByName("Biti ili ne biti.");
@@ -87,8 +91,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void GetRecipeByID()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", ingredients,"");
             recRep.addRecipe(newRecipe);
             Recipe recipe = recRep.getRecipeByID(1);
             Assert.AreEqual(newRecipe, recipe);
@@ -97,8 +102,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void EditRecipeTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", ingredients, "");
             recRep.addRecipe(newRecipe);
             recRep.editRecipe(1, "Jos finije", "8");
             Assert.AreEqual(1, recRep.GetAllRecipes().Count);
@@ -109,8 +115,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void DeleteRecipeTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", ingredients, "");
             recRep.addRecipe(newRecipe);
             recRep.deleteRecipe(1);
             Assert.AreEqual(0, recRep.GetAllRecipes().Count);
@@ -120,8 +127,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void RemoveRecipeFromToMakeTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" }, { "Glatko brašno", "2 cups" }, { "Jaja", "4" }, { "Cimet", "2 tbsp" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", ingredients, "");
             recRep.addRecipe(newRecipe);
             recRep.addToMakeRecipe(newRecipe.Id);
             recRep.removeToMakeRecipe(1);
@@ -132,12 +140,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void CheckCaloriesTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
-            IngredientRepository ingrep = IngredientRepository.getInstance();
-            ingrep.addIngredient(new Ingredient(1, "Voda", 0, 0, 0, 0, 0, 0, 0));
-            ingrep.addIngredient(new Ingredient(2, "Glatko brašno", 350, 12, 73, 2, 7, (float)0.12, (float)0.1));
-            ingrep.addIngredient(new Ingredient(3, "Med", 304, 1, 82, 0, 1, 0, 5));
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", ingredients, "");
             recRep.addRecipe(newRecipe);
             float sum = recRep.calculateSumOfCalories(1);
             Assert.AreEqual(152, sum);
@@ -147,12 +152,9 @@ namespace CookIT.MemoryBasedDAL.Tests
         public void CheckRecommendationTest()
         {
             RecipeRepository recRep = RecipeRepository.getInstance();
-            IngredientRepository ingrep = IngredientRepository.getInstance();
-            ingrep.addIngredient(new Ingredient(1, "Voda", 0, 0, 0, 0, 0, 0, 0));
-            ingrep.addIngredient(new Ingredient(2, "Glatko brašno", 350, 12, 73, 2, 7, (float)0.12, (float)0.1));
-            ingrep.addIngredient(new Ingredient(3, "Med", 304, 1, 82, 0, 1, 0, 5));
+            List<Ingredient> ingredients = DataTest();
             Dictionary<string, string> indIngred = new Dictionary<string, string>() { { "Voda", "4 cups" }, { "Med", "5 tbs" } };
-            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", "");
+            Recipe newRecipe = RecipeFactory.CreateRecipe(1, "Medenjaci", "Sweet", indIngred, "Fino", ingredients,"");
             recRep.addRecipe(newRecipe);
             int ID = recRep.getRecommendation("Sour", "");
             Assert.AreEqual(-1, ID);
@@ -160,6 +162,15 @@ namespace CookIT.MemoryBasedDAL.Tests
             Assert.AreEqual(1, ID2);
             int ID3 = recRep.getRecommendation("", "Glatko brašno");
             Assert.AreEqual(-1, ID3);
+        }
+
+        private List<Ingredient> DataTest()
+        {
+            IngredientRepository ingrep = IngredientRepository.getInstance();
+            ingrep.addIngredient(new Ingredient(1, "Voda", 0, 0, 0, 0, 0, 0, 0));
+            ingrep.addIngredient(new Ingredient(2, "Glatko brašno", 350, 12, 73, 2, 7, (float)0.12, (float)0.1));
+            ingrep.addIngredient(new Ingredient(3, "Med", 304, 1, 82, 0, 1, 0, 5));
+            return ingrep.GetAllIngredients();
         }
     }
 }
