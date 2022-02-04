@@ -109,11 +109,6 @@ namespace CookIT.PresentationLayer
 
                 ListViewItem lvt = new ListViewItem(acc.Name);
                 lvt.Name = acc.Name;
-                if(ingredientQuantity != null)
-                {
-                    lvt.SubItems.Add(ingredientQuantity[lvt.Name]);
-                }
-
                 ingredientList.Items.Add(lvt);
             }
         }

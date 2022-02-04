@@ -89,6 +89,7 @@ namespace CookIT.PresentationLayer
             // 
             // txtRecipeText
             // 
+            this.txtRecipeText.AcceptsReturn = true;
             this.txtRecipeText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(225)))));
             this.txtRecipeText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRecipeText.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,9 +98,10 @@ namespace CookIT.PresentationLayer
             this.txtRecipeText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRecipeText.Multiline = true;
             this.txtRecipeText.Name = "txtRecipeText";
-            this.txtRecipeText.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtRecipeText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtRecipeText.Size = new System.Drawing.Size(580, 245);
             this.txtRecipeText.TabIndex = 13;
+            this.txtRecipeText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 

@@ -38,7 +38,8 @@ namespace CookIT.Controllers
                 {
                     if(ex is RecipeAlreadyExists)
                         MessageBox.Show("The name of the recipe already exists.");
-                    MessageBox.Show("Choose ingredients and their quantity.");
+                    else if(ex is NullReferenceException)
+                        MessageBox.Show("Choose ingredients and their quantity.");
                     AddNewRecipe(inForm, recipeRepository, ingredientRep);
       
                     //throw;

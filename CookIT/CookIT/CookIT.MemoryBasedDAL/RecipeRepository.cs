@@ -169,7 +169,7 @@ namespace CookIT.MemoryBasedDAL
             
             Random _random = new Random();
 
-            if (typeOfRecipe == "" && ingredient == "") return _listRecipes[_random.Next(0, (_listRecipes.Count - 1))].Id;
+            if (typeOfRecipe == "" && ingredient == "") return _listRecipes[_random.Next(0, (_listRecipes.Count))].Id;
 
             List<Recipe> toChooseFrom = new List<Recipe>();
             for(int i = 0; i < _listRecipes.Count; i++)
@@ -191,7 +191,7 @@ namespace CookIT.MemoryBasedDAL
             }
             if(toChooseFrom.Count > 0)
             {
-                int randInd = _random.Next(0, (toChooseFrom.Count - 1));
+                int randInd = _random.Next(0, (toChooseFrom.Count));
                 return toChooseFrom[randInd].Id;
             }
             return -1;
